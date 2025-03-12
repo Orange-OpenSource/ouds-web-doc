@@ -1,0 +1,30 @@
+Parts list under Orange SA Copyright
+Copyright (C) 2016 - 2025 Orange SA All rights reserved
+
+The following parts are proprietary information of Orange.
+You shall not use or display any trade names, trademarks, service marks, products names, illustrations or designs used within the software
+or displayed on this website (https://web.unified-design-system.orange.com) and owned by Orange SA and its subsidiaries,
+in whole or part of, in any medium, except as required for reasonable and customary use in describing the origin of the software
+and reproducing the content of the NOTICE and DOCUMENTATION files.
+Any use or displaying shall constitute an infringement under intellectual property laws of France and international conventions.
+
+site/layouts/partials/icons.html
+site/static/docs/**/assets/brand/orange-logo.svg
+site/static/docs/**/assets/brand/orange-social.png
+site/static/docs/**/assets/fonts/solaris-icons.woff2
+site/static/docs/**/assets/img/favicons/android-chrome-192x192.png
+site/static/docs/**/assets/img/favicons/android-chrome-512x512.png
+site/static/docs/**/assets/img/favicons/apple-touch-icon.png
+site/static/docs/**/assets/img/favicons/favicon-16x16.png
+site/static/docs/**/assets/img/favicons/favicon-32x32.png
+site/static/docs/**/assets/img/favicons/favicon.ico
+site/static/docs/**/assets/img/favicons/mstile-144x144.png
+site/static/docs/**/assets/img/favicons/mstile-150x150.png
+site/static/docs/**/assets/img/favicons/mstile-150x150.png
+site/static/docs/**/assets/img/favicons/mstile-310x150.png
+site/static/docs/**/assets/img/favicons/mstile-310x310.png
+site/static/docs/**/assets/img/favicons/mstile-70x70.png
+site/static/docs/**/assets/img/favicons/safari-pinned-tab.svg
+site/static/docs/**/assets/img/ouds-web-sprite.svg
+
+End of the parts list under Orange SA Copyright
