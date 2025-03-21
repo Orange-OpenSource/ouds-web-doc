@@ -2,284 +2,286 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://web.unified-design-system.orange.com/docs/0.2/about/overview/</loc>
+    <loc>https://web.unified-design-system.orange.com/docs/0.3/about/overview/</loc>
   </url><url>
-    <loc>https://web.unified-design-system.orange.com/docs/0.2/getting-started/accessibility/</loc>
+    <loc>https://web.unified-design-system.orange.com/docs/0.3/getting-started/accessibility/</loc>
   </url><url>
-    <loc>https://web.unified-design-system.orange.com/docs/0.2/components/accordion/</loc>
+    <loc>https://web.unified-design-system.orange.com/docs/0.3/components/accordion/</loc>
   </url><url>
-    <loc>https://web.unified-design-system.orange.com/docs/0.2/examples/album/</loc>
+    <loc>https://web.unified-design-system.orange.com/docs/0.3/examples/album/</loc>
   </url><url>
-    <loc>https://web.unified-design-system.orange.com/docs/0.2/components/alerts/</loc>
+    <loc>https://web.unified-design-system.orange.com/docs/0.3/components/alerts/</loc>
   </url><url>
-    <loc>https://web.unified-design-system.orange.com/docs/0.2/extend/approach/</loc>
+    <loc>https://web.unified-design-system.orange.com/docs/0.3/extend/approach/</loc>
   </url><url>
-    <loc>https://web.unified-design-system.orange.com/docs/0.2/components/back-to-top/</loc>
+    <loc>https://web.unified-design-system.orange.com/docs/0.3/components/back-to-top/</loc>
   </url><url>
-    <loc>https://web.unified-design-system.orange.com/docs/0.2/utilities/background/</loc>
+    <loc>https://web.unified-design-system.orange.com/docs/0.3/utilities/background/</loc>
   </url><url>
-    <loc>https://web.unified-design-system.orange.com/docs/0.2/components/badge/</loc>
+    <loc>https://web.unified-design-system.orange.com/docs/0.3/components/badge/</loc>
   </url><url>
-    <loc>https://web.unified-design-system.orange.com/docs/0.2/examples/blog/</loc>
+    <loc>https://web.unified-design-system.orange.com/docs/0.3/examples/blog/</loc>
   </url><url>
-    <loc>https://web.unified-design-system.orange.com/docs/0.2/utilities/borders/</loc>
+    <loc>https://web.unified-design-system.orange.com/docs/0.3/utilities/borders/</loc>
   </url><url>
-    <loc>https://web.unified-design-system.orange.com/docs/0.2/components/breadcrumb/</loc>
+    <loc>https://web.unified-design-system.orange.com/docs/0.3/components/breadcrumb/</loc>
   </url><url>
-    <loc>https://web.unified-design-system.orange.com/docs/0.2/layout/breakpoints/</loc>
+    <loc>https://web.unified-design-system.orange.com/docs/0.3/layout/breakpoints/</loc>
   </url><url>
-    <loc>https://web.unified-design-system.orange.com/docs/0.2/getting-started/browsers-devices/</loc>
+    <loc>https://web.unified-design-system.orange.com/docs/0.3/getting-started/browsers-devices/</loc>
   </url><url>
-    <loc>https://web.unified-design-system.orange.com/docs/0.2/components/button-group/</loc>
+    <loc>https://web.unified-design-system.orange.com/docs/0.3/components/button-group/</loc>
   </url><url>
-    <loc>https://web.unified-design-system.orange.com/docs/0.2/components/buttons/</loc>
+    <loc>https://web.unified-design-system.orange.com/docs/0.3/components/buttons/</loc>
   </url><url>
-    <loc>https://web.unified-design-system.orange.com/docs/0.2/components/card/</loc>
+    <loc>https://web.unified-design-system.orange.com/docs/0.3/components/card/</loc>
   </url><url>
-    <loc>https://web.unified-design-system.orange.com/docs/0.2/components/carousel/</loc>
+    <loc>https://web.unified-design-system.orange.com/docs/0.3/components/carousel/</loc>
   </url><url>
-    <loc>https://web.unified-design-system.orange.com/docs/0.2/examples/carousel/</loc>
+    <loc>https://web.unified-design-system.orange.com/docs/0.3/examples/carousel/</loc>
   </url><url>
-    <loc>https://web.unified-design-system.orange.com/docs/0.2/examples/cheatsheet/</loc>
+    <loc>https://web.unified-design-system.orange.com/docs/0.3/examples/cheatsheet/</loc>
   </url><url>
-    <loc>https://web.unified-design-system.orange.com/docs/0.2/examples/checkout/</loc>
+    <loc>https://web.unified-design-system.orange.com/docs/0.3/examples/checkout/</loc>
   </url><url>
-    <loc>https://web.unified-design-system.orange.com/docs/0.2/forms/checks-radios/</loc>
+    <loc>https://web.unified-design-system.orange.com/docs/0.3/forms/checks-radios/</loc>
   </url><url>
-    <loc>https://web.unified-design-system.orange.com/docs/0.2/helpers/clearfix/</loc>
+    <loc>https://web.unified-design-system.orange.com/docs/0.3/helpers/clearfix/</loc>
   </url><url>
-    <loc>https://web.unified-design-system.orange.com/docs/0.2/components/close-button/</loc>
+    <loc>https://web.unified-design-system.orange.com/docs/0.3/components/close-button/</loc>
   </url><url>
-    <loc>https://web.unified-design-system.orange.com/docs/0.2/components/collapse/</loc>
+    <loc>https://web.unified-design-system.orange.com/docs/0.3/components/collapse/</loc>
   </url><url>
-    <loc>https://web.unified-design-system.orange.com/docs/0.2/helpers/color-background/</loc>
+    <loc>https://web.unified-design-system.orange.com/docs/0.3/helpers/color-background/</loc>
   </url><url>
-    <loc>https://web.unified-design-system.orange.com/docs/0.2/customize/color-modes/</loc>
+    <loc>https://web.unified-design-system.orange.com/docs/0.3/customize/color-modes/</loc>
   </url><url>
-    <loc>https://web.unified-design-system.orange.com/docs/0.2/customize/color-palette/</loc>
+    <loc>https://web.unified-design-system.orange.com/docs/0.3/customize/color-palette/</loc>
   </url><url>
-    <loc>https://web.unified-design-system.orange.com/docs/0.2/customize/color-theme/</loc>
+    <loc>https://web.unified-design-system.orange.com/docs/0.3/customize/color-theme/</loc>
   </url><url>
-    <loc>https://web.unified-design-system.orange.com/docs/0.2/helpers/colored-links/</loc>
+    <loc>https://web.unified-design-system.orange.com/docs/0.3/helpers/colored-links/</loc>
   </url><url>
-    <loc>https://web.unified-design-system.orange.com/docs/0.2/utilities/colors/</loc>
+    <loc>https://web.unified-design-system.orange.com/docs/0.3/utilities/colors/</loc>
   </url><url>
-    <loc>https://web.unified-design-system.orange.com/docs/0.2/layout/columns/</loc>
+    <loc>https://web.unified-design-system.orange.com/docs/0.3/layout/columns/</loc>
   </url><url>
-    <loc>https://web.unified-design-system.orange.com/docs/0.2/customize/components/</loc>
+    <loc>https://web.unified-design-system.orange.com/docs/0.3/customize/components/</loc>
   </url><url>
-    <loc>https://web.unified-design-system.orange.com/docs/0.2/layout/containers/</loc>
+    <loc>https://web.unified-design-system.orange.com/docs/0.3/layout/containers/</loc>
   </url><url>
-    <loc>https://web.unified-design-system.orange.com/docs/0.2/getting-started/contents/</loc>
+    <loc>https://web.unified-design-system.orange.com/docs/0.3/getting-started/contents/</loc>
   </url><url>
-    <loc>https://web.unified-design-system.orange.com/docs/0.2/getting-started/contribute/</loc>
+    <loc>https://web.unified-design-system.orange.com/docs/0.3/getting-started/contribute/</loc>
   </url><url>
-    <loc>https://web.unified-design-system.orange.com/docs/0.2/about/cookies/</loc>
+    <loc>https://web.unified-design-system.orange.com/docs/0.3/about/cookies/</loc>
   </url><url>
-    <loc>https://web.unified-design-system.orange.com/docs/0.2/examples/cover/</loc>
+    <loc>https://web.unified-design-system.orange.com/docs/0.3/examples/cover/</loc>
   </url><url>
-    <loc>https://web.unified-design-system.orange.com/docs/0.2/layout/css-grid/</loc>
+    <loc>https://web.unified-design-system.orange.com/docs/0.3/layout/css-grid/</loc>
   </url><url>
-    <loc>https://web.unified-design-system.orange.com/docs/0.2/customize/css-variables/</loc>
+    <loc>https://web.unified-design-system.orange.com/docs/0.3/customize/css-variables/</loc>
   </url><url>
-    <loc>https://web.unified-design-system.orange.com/docs/0.2/customize/custom-libraries/</loc>
+    <loc>https://web.unified-design-system.orange.com/docs/0.3/customize/custom-libraries/</loc>
   </url><url>
-    <loc>https://web.unified-design-system.orange.com/docs/0.2/customize/overview/</loc>
+    <loc>https://web.unified-design-system.orange.com/docs/0.3/customize/overview/</loc>
   </url><url>
-    <loc>https://web.unified-design-system.orange.com/docs/0.2/examples/dashboard/</loc>
+    <loc>https://web.unified-design-system.orange.com/docs/0.3/examples/dashboard/</loc>
   </url><url>
-    <loc>https://web.unified-design-system.orange.com/docs/0.2/utilities/display/</loc>
+    <loc>https://web.unified-design-system.orange.com/docs/0.3/utilities/display/</loc>
   </url><url>
-    <loc>https://web.unified-design-system.orange.com/docs/0.2/getting-started/download/</loc>
+    <loc>https://web.unified-design-system.orange.com/docs/0.3/getting-started/download/</loc>
   </url><url>
-    <loc>https://web.unified-design-system.orange.com/docs/0.2/components/dropdowns/</loc>
+    <loc>https://web.unified-design-system.orange.com/docs/0.3/components/dropdowns/</loc>
   </url><url>
-    <loc>https://web.unified-design-system.orange.com/docs/0.2/examples/</loc>
+    <loc>https://web.unified-design-system.orange.com/docs/0.3/examples/</loc>
   </url><url>
-    <loc>https://web.unified-design-system.orange.com/docs/0.2/content/figures/</loc>
+    <loc>https://web.unified-design-system.orange.com/docs/0.3/content/figures/</loc>
   </url><url>
-    <loc>https://web.unified-design-system.orange.com/docs/0.2/utilities/flex/</loc>
+    <loc>https://web.unified-design-system.orange.com/docs/0.3/utilities/flex/</loc>
   </url><url>
-    <loc>https://web.unified-design-system.orange.com/docs/0.2/utilities/float/</loc>
+    <loc>https://web.unified-design-system.orange.com/docs/0.3/utilities/float/</loc>
   </url><url>
-    <loc>https://web.unified-design-system.orange.com/docs/0.2/forms/floating-labels/</loc>
+    <loc>https://web.unified-design-system.orange.com/docs/0.3/forms/floating-labels/</loc>
   </url><url>
-    <loc>https://web.unified-design-system.orange.com/docs/0.2/helpers/focus-ring/</loc>
+    <loc>https://web.unified-design-system.orange.com/docs/0.3/helpers/focus-ring/</loc>
   </url><url>
-    <loc>https://web.unified-design-system.orange.com/docs/0.2/examples/font/</loc>
+    <loc>https://web.unified-design-system.orange.com/docs/0.3/examples/font/</loc>
   </url><url>
-    <loc>https://web.unified-design-system.orange.com/docs/0.2/components/footer/</loc>
+    <loc>https://web.unified-design-system.orange.com/docs/0.3/components/footer/</loc>
   </url><url>
-    <loc>https://web.unified-design-system.orange.com/docs/0.2/forms/form-control/</loc>
+    <loc>https://web.unified-design-system.orange.com/docs/0.3/forms/form-control/</loc>
   </url><url>
-    <loc>https://web.unified-design-system.orange.com/docs/0.2/forms/overview/</loc>
+    <loc>https://web.unified-design-system.orange.com/docs/0.3/forms/overview/</loc>
   </url><url>
-    <loc>https://web.unified-design-system.orange.com/docs/0.2/getting-started/introduction/</loc>
+    <loc>https://web.unified-design-system.orange.com/docs/0.3/getting-started/introduction/</loc>
   </url><url>
-    <loc>https://web.unified-design-system.orange.com/docs/0.2/examples/grid-system/</loc>
+    <loc>https://web.unified-design-system.orange.com/docs/0.3/examples/grid-system/</loc>
   </url><url>
-    <loc>https://web.unified-design-system.orange.com/docs/0.2/layout/grid/</loc>
+    <loc>https://web.unified-design-system.orange.com/docs/0.3/layout/grid/</loc>
   </url><url>
-    <loc>https://web.unified-design-system.orange.com/docs/0.2/examples/grid/</loc>
+    <loc>https://web.unified-design-system.orange.com/docs/0.3/examples/grid/</loc>
   </url><url>
-    <loc>https://web.unified-design-system.orange.com/docs/0.2/layout/gutters/</loc>
+    <loc>https://web.unified-design-system.orange.com/docs/0.3/layout/gutters/</loc>
   </url><url>
-    <loc>https://web.unified-design-system.orange.com/docs/0.2/helpers/icon/</loc>
+    <loc>https://web.unified-design-system.orange.com/docs/0.3/helpers/icon/</loc>
   </url><url>
-    <loc>https://web.unified-design-system.orange.com/docs/0.2/helpers/icon-link/</loc>
+    <loc>https://web.unified-design-system.orange.com/docs/0.3/helpers/icon-link/</loc>
   </url><url>
-    <loc>https://web.unified-design-system.orange.com/docs/0.2/extend/icons/</loc>
+    <loc>https://web.unified-design-system.orange.com/docs/0.3/extend/icons/</loc>
   </url><url>
-    <loc>https://web.unified-design-system.orange.com/docs/0.2/content/images/</loc>
+    <loc>https://web.unified-design-system.orange.com/docs/0.3/content/images/</loc>
   </url><url>
-    <loc>https://web.unified-design-system.orange.com/docs/0.2/forms/input-group/</loc>
+    <loc>https://web.unified-design-system.orange.com/docs/0.3/forms/input-group/</loc>
   </url><url>
-    <loc>https://web.unified-design-system.orange.com/docs/0.2/utilities/interactions/</loc>
+    <loc>https://web.unified-design-system.orange.com/docs/0.3/utilities/interactions/</loc>
   </url><url>
-    <loc>https://web.unified-design-system.orange.com/docs/0.2/getting-started/javascript/</loc>
+    <loc>https://web.unified-design-system.orange.com/docs/0.3/getting-started/javascript/</loc>
   </url><url>
-    <loc>https://web.unified-design-system.orange.com/docs/0.2/examples/jumbotron/</loc>
+    <loc>https://web.unified-design-system.orange.com/docs/0.3/examples/jumbotron/</loc>
   </url><url>
-    <loc>https://web.unified-design-system.orange.com/docs/0.2/forms/layout/</loc>
+    <loc>https://web.unified-design-system.orange.com/docs/0.3/forms/layout/</loc>
   </url><url>
-    <loc>https://web.unified-design-system.orange.com/docs/0.2/about/license/</loc>
+    <loc>https://web.unified-design-system.orange.com/docs/0.3/about/license/</loc>
   </url><url>
-    <loc>https://web.unified-design-system.orange.com/docs/0.2/utilities/link/</loc>
+    <loc>https://web.unified-design-system.orange.com/docs/0.3/utilities/link/</loc>
   </url><url>
-    <loc>https://web.unified-design-system.orange.com/docs/0.2/components/list-group/</loc>
+    <loc>https://web.unified-design-system.orange.com/docs/0.3/components/links/</loc>
   </url><url>
-    <loc>https://web.unified-design-system.orange.com/docs/0.2/examples/loading-buttons/</loc>
+    <loc>https://web.unified-design-system.orange.com/docs/0.3/components/list-group/</loc>
   </url><url>
-    <loc>https://web.unified-design-system.orange.com/docs/0.2/components/local-navigation/</loc>
+    <loc>https://web.unified-design-system.orange.com/docs/0.3/examples/loading-buttons/</loc>
   </url><url>
-    <loc>https://web.unified-design-system.orange.com/docs/0.2/migration-from-boosted/</loc>
+    <loc>https://web.unified-design-system.orange.com/docs/0.3/components/local-navigation/</loc>
   </url><url>
-    <loc>https://web.unified-design-system.orange.com/docs/0.2/migration/</loc>
+    <loc>https://web.unified-design-system.orange.com/docs/0.3/migration-from-boosted/</loc>
   </url><url>
-    <loc>https://web.unified-design-system.orange.com/docs/0.2/components/modal/</loc>
+    <loc>https://web.unified-design-system.orange.com/docs/0.3/migration/</loc>
   </url><url>
-    <loc>https://web.unified-design-system.orange.com/docs/0.2/components/navbar/</loc>
+    <loc>https://web.unified-design-system.orange.com/docs/0.3/components/modal/</loc>
   </url><url>
-    <loc>https://web.unified-design-system.orange.com/docs/0.2/components/navs-tabs/</loc>
+    <loc>https://web.unified-design-system.orange.com/docs/0.3/components/navbar/</loc>
   </url><url>
-    <loc>https://web.unified-design-system.orange.com/docs/0.2/utilities/object-fit/</loc>
+    <loc>https://web.unified-design-system.orange.com/docs/0.3/components/navs-tabs/</loc>
   </url><url>
-    <loc>https://web.unified-design-system.orange.com/docs/0.2/components/offcanvas/</loc>
+    <loc>https://web.unified-design-system.orange.com/docs/0.3/utilities/object-fit/</loc>
   </url><url>
-    <loc>https://web.unified-design-system.orange.com/docs/0.2/utilities/opacity/</loc>
+    <loc>https://web.unified-design-system.orange.com/docs/0.3/components/offcanvas/</loc>
   </url><url>
-    <loc>https://web.unified-design-system.orange.com/docs/0.2/customize/optimize/</loc>
+    <loc>https://web.unified-design-system.orange.com/docs/0.3/utilities/opacity/</loc>
   </url><url>
-    <loc>https://web.unified-design-system.orange.com/docs/0.2/customize/options/</loc>
+    <loc>https://web.unified-design-system.orange.com/docs/0.3/customize/optimize/</loc>
   </url><url>
-    <loc>https://web.unified-design-system.orange.com/docs/0.2/about/brand/</loc>
+    <loc>https://web.unified-design-system.orange.com/docs/0.3/customize/options/</loc>
   </url><url>
-    <loc>https://web.unified-design-system.orange.com/docs/0.2/components/orange-navbar/</loc>
+    <loc>https://web.unified-design-system.orange.com/docs/0.3/about/brand/</loc>
+  </url><url>
+    <loc>https://web.unified-design-system.orange.com/docs/0.3/components/orange-navbar/</loc>
   </url><url>
     <loc>https://web.unified-design-system.orange.com/</loc>
   </url><url>
-    <loc>https://web.unified-design-system.orange.com/docs/0.2/getting-started/parcel/</loc>
+    <loc>https://web.unified-design-system.orange.com/docs/0.3/getting-started/parcel/</loc>
   </url><url>
-    <loc>https://web.unified-design-system.orange.com/docs/0.2/getting-started/vite/</loc>
+    <loc>https://web.unified-design-system.orange.com/docs/0.3/getting-started/vite/</loc>
   </url><url>
-    <loc>https://web.unified-design-system.orange.com/docs/0.2/getting-started/webpack/</loc>
+    <loc>https://web.unified-design-system.orange.com/docs/0.3/getting-started/webpack/</loc>
   </url><url>
-    <loc>https://web.unified-design-system.orange.com/docs/0.2/utilities/overflow/</loc>
+    <loc>https://web.unified-design-system.orange.com/docs/0.3/utilities/overflow/</loc>
   </url><url>
-    <loc>https://web.unified-design-system.orange.com/docs/0.2/components/pagination/</loc>
+    <loc>https://web.unified-design-system.orange.com/docs/0.3/components/pagination/</loc>
   </url><url>
-    <loc>https://web.unified-design-system.orange.com/docs/0.2/components/placeholders/</loc>
+    <loc>https://web.unified-design-system.orange.com/docs/0.3/components/placeholders/</loc>
   </url><url>
-    <loc>https://web.unified-design-system.orange.com/docs/0.2/components/popovers/</loc>
+    <loc>https://web.unified-design-system.orange.com/docs/0.3/components/popovers/</loc>
   </url><url>
-    <loc>https://web.unified-design-system.orange.com/docs/0.2/helpers/position/</loc>
+    <loc>https://web.unified-design-system.orange.com/docs/0.3/helpers/position/</loc>
   </url><url>
-    <loc>https://web.unified-design-system.orange.com/docs/0.2/utilities/position/</loc>
+    <loc>https://web.unified-design-system.orange.com/docs/0.3/utilities/position/</loc>
   </url><url>
-    <loc>https://web.unified-design-system.orange.com/docs/0.2/examples/pricing/</loc>
+    <loc>https://web.unified-design-system.orange.com/docs/0.3/examples/pricing/</loc>
   </url><url>
-    <loc>https://web.unified-design-system.orange.com/docs/0.2/examples/product/</loc>
+    <loc>https://web.unified-design-system.orange.com/docs/0.3/examples/product/</loc>
   </url><url>
-    <loc>https://web.unified-design-system.orange.com/docs/0.2/components/progress/</loc>
+    <loc>https://web.unified-design-system.orange.com/docs/0.3/components/progress/</loc>
   </url><url>
-    <loc>https://web.unified-design-system.orange.com/docs/0.2/forms/quantity-selector/</loc>
+    <loc>https://web.unified-design-system.orange.com/docs/0.3/forms/quantity-selector/</loc>
   </url><url>
-    <loc>https://web.unified-design-system.orange.com/docs/0.2/forms/range/</loc>
+    <loc>https://web.unified-design-system.orange.com/docs/0.3/forms/range/</loc>
   </url><url>
-    <loc>https://web.unified-design-system.orange.com/docs/0.2/helpers/ratio/</loc>
+    <loc>https://web.unified-design-system.orange.com/docs/0.3/helpers/ratio/</loc>
   </url><url>
-    <loc>https://web.unified-design-system.orange.com/docs/0.2/content/reboot/</loc>
+    <loc>https://web.unified-design-system.orange.com/docs/0.3/content/reboot/</loc>
   </url><url>
-    <loc>https://web.unified-design-system.orange.com/docs/0.2/getting-started/rfs/</loc>
+    <loc>https://web.unified-design-system.orange.com/docs/0.3/getting-started/rfs/</loc>
   </url><url>
-    <loc>https://web.unified-design-system.orange.com/docs/0.2/getting-started/rtl/</loc>
+    <loc>https://web.unified-design-system.orange.com/docs/0.3/getting-started/rtl/</loc>
   </url><url>
-    <loc>https://web.unified-design-system.orange.com/docs/0.2/customize/sass/</loc>
+    <loc>https://web.unified-design-system.orange.com/docs/0.3/customize/sass/</loc>
   </url><url>
-    <loc>https://web.unified-design-system.orange.com/docs/0.2/components/scrollspy/</loc>
+    <loc>https://web.unified-design-system.orange.com/docs/0.3/components/scrollspy/</loc>
   </url><url>
-    <loc>https://web.unified-design-system.orange.com/docs/0.2/forms/select/</loc>
+    <loc>https://web.unified-design-system.orange.com/docs/0.3/forms/select/</loc>
   </url><url>
-    <loc>https://web.unified-design-system.orange.com/docs/0.2/utilities/shadows/</loc>
+    <loc>https://web.unified-design-system.orange.com/docs/0.3/utilities/shadows/</loc>
   </url><url>
-    <loc>https://web.unified-design-system.orange.com/docs/0.2/examples/sign-in/</loc>
+    <loc>https://web.unified-design-system.orange.com/docs/0.3/examples/sign-in/</loc>
   </url><url>
-    <loc>https://web.unified-design-system.orange.com/docs/0.2/utilities/sizing/</loc>
+    <loc>https://web.unified-design-system.orange.com/docs/0.3/utilities/sizing/</loc>
   </url><url>
-    <loc>https://web.unified-design-system.orange.com/docs/0.2/utilities/spacing/</loc>
+    <loc>https://web.unified-design-system.orange.com/docs/0.3/utilities/spacing/</loc>
   </url><url>
-    <loc>https://web.unified-design-system.orange.com/docs/0.2/components/spinners/</loc>
+    <loc>https://web.unified-design-system.orange.com/docs/0.3/components/spinners/</loc>
   </url><url>
-    <loc>https://web.unified-design-system.orange.com/docs/0.2/helpers/stacks/</loc>
+    <loc>https://web.unified-design-system.orange.com/docs/0.3/helpers/stacks/</loc>
   </url><url>
-    <loc>https://web.unified-design-system.orange.com/docs/0.2/components/stepped-process/</loc>
+    <loc>https://web.unified-design-system.orange.com/docs/0.3/components/stepped-process/</loc>
   </url><url>
-    <loc>https://web.unified-design-system.orange.com/docs/0.2/components/sticker/</loc>
+    <loc>https://web.unified-design-system.orange.com/docs/0.3/components/sticker/</loc>
   </url><url>
-    <loc>https://web.unified-design-system.orange.com/docs/0.2/examples/sticky-footer-navbar/</loc>
+    <loc>https://web.unified-design-system.orange.com/docs/0.3/examples/sticky-footer-navbar/</loc>
   </url><url>
-    <loc>https://web.unified-design-system.orange.com/docs/0.2/examples/sticky-footer/</loc>
+    <loc>https://web.unified-design-system.orange.com/docs/0.3/examples/sticky-footer/</loc>
   </url><url>
-    <loc>https://web.unified-design-system.orange.com/docs/0.2/helpers/stretched-link/</loc>
+    <loc>https://web.unified-design-system.orange.com/docs/0.3/helpers/stretched-link/</loc>
   </url><url>
-    <loc>https://web.unified-design-system.orange.com/docs/0.2/content/tables/</loc>
+    <loc>https://web.unified-design-system.orange.com/docs/0.3/content/tables/</loc>
   </url><url>
-    <loc>https://web.unified-design-system.orange.com/docs/0.2/components/tags/</loc>
+    <loc>https://web.unified-design-system.orange.com/docs/0.3/components/tags/</loc>
   </url><url>
-    <loc>https://web.unified-design-system.orange.com/docs/0.2/about/team/</loc>
+    <loc>https://web.unified-design-system.orange.com/docs/0.3/about/team/</loc>
   </url><url>
-    <loc>https://web.unified-design-system.orange.com/docs/0.2/utilities/text/</loc>
+    <loc>https://web.unified-design-system.orange.com/docs/0.3/utilities/text/</loc>
   </url><url>
-    <loc>https://web.unified-design-system.orange.com/docs/0.2/helpers/text-truncation/</loc>
+    <loc>https://web.unified-design-system.orange.com/docs/0.3/helpers/text-truncation/</loc>
   </url><url>
-    <loc>https://web.unified-design-system.orange.com/docs/0.2/components/title-bars/</loc>
+    <loc>https://web.unified-design-system.orange.com/docs/0.3/components/title-bars/</loc>
   </url><url>
-    <loc>https://web.unified-design-system.orange.com/docs/0.2/components/toasts/</loc>
+    <loc>https://web.unified-design-system.orange.com/docs/0.3/components/toasts/</loc>
   </url><url>
-    <loc>https://web.unified-design-system.orange.com/docs/0.2/components/tooltips/</loc>
+    <loc>https://web.unified-design-system.orange.com/docs/0.3/components/tooltips/</loc>
   </url><url>
-    <loc>https://web.unified-design-system.orange.com/docs/0.2/about/translations/</loc>
+    <loc>https://web.unified-design-system.orange.com/docs/0.3/about/translations/</loc>
   </url><url>
-    <loc>https://web.unified-design-system.orange.com/docs/0.2/content/typography/</loc>
+    <loc>https://web.unified-design-system.orange.com/docs/0.3/content/typography/</loc>
   </url><url>
-    <loc>https://web.unified-design-system.orange.com/docs/0.2/layout/utilities/</loc>
+    <loc>https://web.unified-design-system.orange.com/docs/0.3/layout/utilities/</loc>
   </url><url>
-    <loc>https://web.unified-design-system.orange.com/docs/0.2/utilities/api/</loc>
+    <loc>https://web.unified-design-system.orange.com/docs/0.3/utilities/api/</loc>
   </url><url>
-    <loc>https://web.unified-design-system.orange.com/docs/0.2/forms/validation/</loc>
+    <loc>https://web.unified-design-system.orange.com/docs/0.3/forms/validation/</loc>
   </url><url>
     <loc>https://web.unified-design-system.orange.com/docs/versions/</loc>
   </url><url>
-    <loc>https://web.unified-design-system.orange.com/docs/0.2/utilities/vertical-align/</loc>
+    <loc>https://web.unified-design-system.orange.com/docs/0.3/utilities/vertical-align/</loc>
   </url><url>
-    <loc>https://web.unified-design-system.orange.com/docs/0.2/helpers/vertical-rule/</loc>
+    <loc>https://web.unified-design-system.orange.com/docs/0.3/helpers/vertical-rule/</loc>
   </url><url>
-    <loc>https://web.unified-design-system.orange.com/docs/0.2/utilities/visibility/</loc>
+    <loc>https://web.unified-design-system.orange.com/docs/0.3/utilities/visibility/</loc>
   </url><url>
-    <loc>https://web.unified-design-system.orange.com/docs/0.2/helpers/visually-hidden/</loc>
+    <loc>https://web.unified-design-system.orange.com/docs/0.3/helpers/visually-hidden/</loc>
   </url><url>
-    <loc>https://web.unified-design-system.orange.com/docs/0.2/layout/z-index/</loc>
+    <loc>https://web.unified-design-system.orange.com/docs/0.3/layout/z-index/</loc>
   </url><url>
-    <loc>https://web.unified-design-system.orange.com/docs/0.2/utilities/z-index/</loc>
+    <loc>https://web.unified-design-system.orange.com/docs/0.3/utilities/z-index/</loc>
   </url>
 </urlset>
