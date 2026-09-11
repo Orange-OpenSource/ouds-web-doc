@@ -1,0 +1,1371 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="auto" data-bs-brand="orange-compact">
+  <head>
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<meta name="description" content="Documentation and examples for OUDS Web typography, including global settings, headings, body text, lists, and more.">
+
+<meta name="author" content="Orange and OUDS Web Orange Compact contributors">
+<meta name="generator" content="Astro v7.3.1">
+<meta name="docsearch:language" content="en">
+<meta name="docsearch:version" content="1.5">
+
+<link rel="canonical" href="https://web.unified-design-system.orange.com/orange-compact/docs/1.5/foundation/typography/">
+
+<link rel="preconnect" href="https://AKIHKMSEKB-dsn.algolia.net" crossorigin>
+
+<title>Typography · OUDS Web Orange Compact v1.5</title>
+
+
+
+<!-- OUDS mod -->
+<link rel="preload" href="/orange-compact/docs/1.5/assets/img/ouds-web-sprite.svg" as="image" type="image/svg+xml">
+<!-- end mod -->
+
+<script src="/orange-compact/docs/1.5/assets/js/color-modes.js"></script>
+<script src="/orange-compact/docs/1.5/assets/js/brand-picker.js"></script>
+
+<link href="/orange-compact/docs/1.5/dist/css/ouds-web-bootstrap.min.css" rel="stylesheet" integrity="sha384-rOLGRaQ9IIAjIbAdSSXMde47zdyQWRv0o80pkA7GULkjbySDbLdOpcZwMLOz0l9F">
+  
+
+
+
+<link rel="apple-touch-icon" href="/orange-compact/docs/1.5/assets/img/favicons/apple-touch-icon.png" sizes="180x180">
+<link rel="icon" href="/orange-compact/docs/1.5/assets/img/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
+<link rel="icon" href="/orange-compact/docs/1.5/assets/img/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
+<link rel="manifest" href="/orange-compact/docs/1.5/assets/img/favicons/manifest.json">
+<link rel="mask-icon" href="/orange-compact/docs/1.5/assets/img/favicons/safari-pinned-tab.svg" color="#000">
+<link rel="icon" href="/orange-compact/docs/1.5/assets/img/favicons/favicon.ico">
+<meta name="msapplication-config" content="/orange-compact/docs/1.5/assets/img/favicons/browserconfig.xml">
+<meta name="theme-color" content="#000">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@getbootstrap">
+<meta name="twitter:creator" content="@getbootstrap">
+
+<meta property="og:url" content="https://web.unified-design-system.orange.com/orange-compact/docs/1.5/foundation/typography/">
+<meta property="og:title" content="Typography">
+<meta property="og:description" content="Documentation and examples for OUDS Web typography, including global settings, headings, body text, lists, and more.">
+<meta property="og:type" content="article">
+<meta property="og:image" content="https://web.unified-design-system.orange.com/orange-compact/docs/1.5/assets/brand/social.png">
+<meta property="og:image:type" content="image/png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+  <link rel="stylesheet" href="/orange-compact/docs/1.5/assets/ScssProd.D-nX-qBR.css"><link rel="stylesheet" href="/orange-compact/docs/1.5/assets/ControlItem.BGhrMIw0.css"></head>
+  <body data-bs-spy="scroll" data-bs-target="#TableOfContents" data-bs-top-margin="220px">
+    <a id="top"></a><!-- OUDS mod: anchor for back-to-top link -->
+<div class="skippy visually-hidden-focusable overflow-hidden position-fixed top-0 end-0 start-0">
+  <nav aria-label="Skip links" class="container-fluid container-max-width py-2xsmall ps-4xlarge">
+    <a class="d-inline-flex p-small ms-large bg-always-black" href="#bd-content">Skip to main content</a>
+    <a class="d-none md:d-inline-flex p-small bg-always-black" href="#bd-docs-nav">
+          Skip to docs navigation
+        </a>
+  </nav>
+</div>
+
+<header class="sticky-top bd-header">
+  <nav class="navbar navbar-expand supra d-none" data-bs-theme="dark" aria-label="Supra-navigation - New release banner">
+    <div class="container-fluid container-max-width d-flex justify-content-center">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="https://web.unified-design-system.orange.com">
+            There’s a newer version of OUDS Web!
+          </a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <nav class="navbar lg:navbar-expand" data-bs-theme="dark" aria-label="Main navigation">
+    <div class="container-fluid container-max-width">
+      <div class="navbar-brand me-auto lg:me-2xlarge">
+        <a class="stretched-link" href="/orange-compact/">
+          <img src="/orange-compact/docs/1.5/assets/brand/orange-compact-logo.svg" width="50" height="50" alt="OUDS Web - Back to Home" loading="lazy">
+        </a>
+      </div>
+
+      <!--OUDS mod: no sidebar toggle which is in the subnav in OUDS Web-->
+
+      <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target=".bd-navbar" aria-controls="bd-navbar1 bd-navbar2" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div id="bd-navbar1" class="navbar-collapse collapse lg:me-auto bd-navbar mb-none border-none">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+  <a class="nav-link" href="/orange-compact/docs/1.5/getting-started/introduction" onclick="dataLayer.push({'event': 'clic', 'site_name':'accessibility-boosted', 'phase':'prod', 'track_category':'navbar', 'track_name':'getting-started'});">
+    
+            Getting started
+          
+  </a>
+</li>
+          <li class="nav-item">
+  <a aria-current="true" class="nav-link active" href="/orange-compact/docs/1.5/foundation/approach" onclick="dataLayer.push({'event': 'clic', 'site_name':'accessibility-boosted', 'phase':'prod', 'track_category':'navbar', 'track_name':'foundation'});">
+    
+            Foundation
+          
+  </a>
+</li>
+          <li class="nav-item">
+  <a class="nav-link" href="/orange-compact/docs/1.5/layout/breakpoints" onclick="dataLayer.push({'event': 'clic', 'site_name':'accessibility-boosted', 'phase':'prod', 'track_category':'navbar', 'track_name':'layout'});">
+    
+            Layout
+          
+  </a>
+</li>
+          <li class="nav-item">
+  <a class="nav-link" href="/orange-compact/docs/1.5/components" onclick="dataLayer.push({'event': 'clic', 'site_name':'accessibility-boosted', 'phase':'prod', 'track_category':'navbar', 'track_name':'components'});">
+    
+            Components
+          
+  </a>
+</li>
+          <li class="nav-item">
+  <a class="nav-link" href="/orange-compact/docs/1.5/utilities" onclick="dataLayer.push({'event': 'clic', 'site_name':'accessibility-boosted', 'phase':'prod', 'track_category':'navbar', 'track_name':'utilities'});">
+    
+            Utilities
+          
+  </a>
+</li>
+          <li class="nav-item">
+  <a class="nav-link" href="/orange-compact/docs/1.5/examples" onclick="dataLayer.push({'event': 'clic', 'site_name':'accessibility-boosted', 'phase':'prod', 'track_category':'navbar', 'track_name':'examples'});">
+    
+            Examples
+          
+  </a>
+</li>
+        </ul>
+      </div>
+      <div id="bd-navbar2" class="navbar-collapse collapse bd-navbar border-none">
+        <ul class="navbar-nav flex-row lg:me-2xlarge">
+          <li class="nav-item">
+  <a class="nav-link nav-icon" href="https://github.com/Orange-OpenSource/Orange-Boosted-Bootstrap" target="_blank" rel="noopener">
+    
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 499.36" role="img" height="16" width="16">
+  <title>GitHub</title>
+  <path fill="currentColor" fill-rule="evenodd" d="M256 0C114.64 0 0 114.61 0 256c0 113.09 73.34 209 175.08 242.9 12.8 2.35 17.47-5.56 17.47-12.34 0-6.08-.22-22.18-.35-43.54-71.2 15.49-86.2-34.34-86.2-34.34-11.64-29.57-28.42-37.45-28.42-37.45-23.27-15.84 1.73-15.55 1.73-15.55 25.69 1.81 39.21 26.38 39.21 26.38 22.84 39.12 59.92 27.82 74.5 21.27 2.33-16.54 8.94-27.82 16.25-34.22-56.84-6.43-116.6-28.43-116.6-126.49 0-27.95 10-50.8 26.35-68.69-2.63-6.48-11.42-32.5 2.51-67.75 0 0 21.49-6.88 70.4 26.24a242.65 242.65 0 0 1 128.18 0c48.87-33.13 70.33-26.24 70.33-26.24 14 35.25 5.18 61.27 2.55 67.75 16.41 17.9 26.31 40.75 26.31 68.69 0 98.35-59.85 120-116.88 126.32 9.19 7.9 17.38 23.53 17.38 47.41 0 34.22-.31 61.83-.31 70.23 0 6.85 4.61 14.81 17.6 12.31C438.72 464.97 512 369.08 512 256.02 512 114.62 397.37 0 256 0z">
+  </path>
+</svg>
+            <span class="visually-hidden">GitHub</span>
+          
+  </a>
+</li>
+
+          <li class="nav-item">
+            <div class="bd-search nav-link nav-icon" id="docsearch" data-bd-docs-version="1.5">
+            </div>
+          </li>
+
+          <li class="nav-item dropdown">
+  <button type="button" class="nav-link nav-icon dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" data-bs-display="static">
+    <span class="lg:d-none" aria-hidden="true">OUDS Web</span><span class="visually-hidden">OUDS Web&nbsp;</span> v1.5
+    <span class="visually-hidden">(switch to other versions)</span>
+  </button>
+  <ul class="dropdown-menu dropdown-menu-end mb-small lg:mb-none">
+    <li><h6 class="dropdown-header">v1 releases</h6></li>
+    <li>
+      <a class="dropdown-item d-flex align-items-center justify-content-between active" aria-current="true" href="/orange-compact/docs/1.5/foundation/typography/">
+        Latest (1.5.x)
+        <svg aria-hidden="true"><use xlink:href="/orange-compact/docs/1.5/assets/img/ouds-web-sprite.svg#check2"></use></svg>
+      </a>
+    </li>
+    <li><hr class="dropdown-divider"></li>
+    <li><a class="dropdown-item" href="/orange-compact/docs/versions/">All versions</a></li>
+  </ul>
+</li>
+        </ul>
+        <ul class="navbar-nav flex-row">
+          <li class="nav-item dropdown">
+            <button class="nav-link nav-icon dropdown-toggle" id="bd-theme" type="button" aria-expanded="false" data-bs-toggle="dropdown" data-bs-display="static" aria-label="Toggle mode (auto)">
+  <svg class="theme-icon-active" aria-hidden="true">
+    <use href="/orange-compact/docs/1.5/assets/img/ouds-web-sprite.svg#ui-auto-mode"></use>
+  </svg>
+  <span class="lg:d-none ms-small" id="bd-theme-text">Mode</span>
+</button>
+<ul class="dropdown-menu dropdown-menu-end mb-small" aria-labelledby="bd-theme-text">
+  <li>
+    <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="light" aria-pressed="false">
+      <svg class="me-small" aria-hidden="true">
+        <use href="/orange-compact/docs/1.5/assets/img/ouds-web-sprite.svg#ui-light-mode"></use>
+      </svg>
+      Light
+      <svg class="ms-auto d-none" aria-hidden="true">
+        <use href="/orange-compact/docs/1.5/assets/img/ouds-web-sprite.svg#check2"></use>
+      </svg>
+    </button>
+  </li>
+  <li>
+    <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="dark" aria-pressed="false">
+      <svg class="me-small" aria-hidden="true">
+        <use href="/orange-compact/docs/1.5/assets/img/ouds-web-sprite.svg#ui-dark-mode"></use>
+      </svg>
+      Dark
+      <svg class="ms-auto d-none" aria-hidden="true">
+        <use href="/orange-compact/docs/1.5/assets/img/ouds-web-sprite.svg#check2"></use>
+      </svg>
+    </button>
+  </li>
+  <li>
+    <button type="button" class="dropdown-item d-flex align-items-center active" data-bs-theme-value="auto" aria-pressed="true">
+      <svg class="me-small" aria-hidden="true">
+        <use href="/orange-compact/docs/1.5/assets/img/ouds-web-sprite.svg#ui-auto-mode"></use>
+      </svg>
+      Auto
+      <svg class="ms-auto d-none" aria-hidden="true">
+        <use href="/orange-compact/docs/1.5/assets/img/ouds-web-sprite.svg#check2"></use>
+      </svg>
+    </button>
+  </li>
+</ul>
+          </li>
+          <li class="nav-item dropdown">
+            <button class="nav-link nav-icon dropdown-toggle" id="bd-brand" type="button" aria-expanded="false" data-bs-toggle="dropdown" data-bs-display="static" aria-label="Toggle brand (orange-compact)">
+              <svg class="ms-auto" aria-hidden="true">
+                <use href="/orange-compact/docs/1.5/assets/img/ouds-web-sprite.svg#theme"></use>
+              </svg>
+              <span class="lg:d-none ms-small" id="bd-brand-text">Brand</span>
+            </button>
+            <ul class="dropdown-menu dropdown-menu-end mb-small" aria-labelledby="bd-brand-text">
+              <li>
+                <a href="https://web.unified-design-system.orange.com/orange-compact/docs/1.5/foundation/typography/" class="dropdown-item d-flex align-items-center" data-bs-brand-value="orange" aria-current="false">
+                  <img class="bs-medium-icon me-small" src="/orange-compact/docs/1.5/assets/brand/orange-logo.svg" alt="" loading="lazy">
+                  Orange
+                  <svg class="ms-auto d-none" aria-hidden="true"><use href="/orange-compact/docs/1.5/assets/img/ouds-web-sprite.svg#check2"></use></svg>
+                </a>
+              </li>
+              <li>
+                <a href="https://web.unified-design-system.orange.com/orange-compact/docs/1.5/foundation/typography/" class="dropdown-item d-flex align-items-center active" data-bs-brand-value="orange-compact" aria-current="true">
+                  <img class="bs-medium-icon me-small" src="/orange-compact/docs/1.5/assets/brand/orange-compact-logo.svg" alt="" loading="lazy">
+                  Orange Compact
+                  <svg class="ms-auto d-none" aria-hidden="true"><use href="/orange-compact/docs/1.5/assets/img/ouds-web-sprite.svg#check2"></use></svg>
+                </a>
+              </li>
+              <li>
+                <a href="https://web.unified-design-system.orange.com/orange-compact/docs/1.5/foundation/typography/" class="dropdown-item d-flex align-items-center" data-bs-brand-value="sosh" aria-current="false">
+                  <img class="bs-medium-icon me-small" src="/orange-compact/docs/1.5/assets/brand/sosh-logo.svg" alt="" loading="lazy">
+                  Sosh
+                  <svg class="ms-auto d-none" aria-hidden="true"><use href="/orange-compact/docs/1.5/assets/img/ouds-web-sprite.svg#check2"></use></svg>
+                </a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!--OUDS mod: doesn’t exist anymore in Bootstrap-->
+<nav class="bd-subnavbar py-small lg:d-none" aria-label="Secondary navigation">
+  <div class="container-fluid container-max-width d-flex justify-content-start">
+    <button class="btn btn-default" type="button" data-bs-toggle="offcanvas" data-bs-target="#bdSidebar" aria-controls="bdSidebar">
+      <svg aria-hidden="true">
+        <use xlink:href="/orange-compact/docs/1.5/assets/img/ouds-web-sprite.svg#side-panel-show-chevron"></use>
+      </svg>
+      <span class="d-none sm:d-inline">Browse docs: Foundation</span>
+      <span class="sm:d-none">Browse: Foundation</span>
+    </button>
+  </div>
+</nav>
+</header>
+
+    <div class="container-fluid container-max-width bd-gutter mt-large md:my-2xlarge bd-layout">
+    <aside class="bd-sidebar">
+      <h1 id="docs-nav" class="visually-hidden">Docs navigation</h1>
+      <div class="lg:offcanvas offcanvas-start" tabindex="-1" id="bdSidebar" aria-labelledby="bdSidebarOffcanvasLabel">
+        <div class="offcanvas-header border-bottom">
+          <h5 class="offcanvas-title" id="bdSidebarOffcanvasLabel">Browse docs</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close" data-bs-target="#bdSidebar" data-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Close"></button>
+        </div>
+
+        <div class="offcanvas-body">
+          <nav class="bd-links w-100" id="bd-docs-nav" aria-labelledby="docs-nav">
+  <ul class="bd-links-nav list-unstyled mb-none pb-large md:pb-small lg:pe-small">
+    <li class="bd-links-group py-small">
+              <h2 class="fs-bl mb-none bd-links-heading d-flex w-100 align-items-center fw-semibold">
+                <svg class="bl-medium-icon me-2xsmall" style="color: var(--bs-body-color);&quot;" aria-hidden="true">
+                    <use xlink:href="/orange-compact/docs/1.5/assets/img/ouds-web-sprite.svg#design-token-figma"></use>
+                  </svg>
+                Foundation
+              </h2>
+              <ul class="list-unstyled fw-normal mt-2xsmall pb-small small">
+                <li>
+                        <a href="/orange-compact/docs/1.5/foundation/approach" class="bd-links-link d-inline-flex column-gap-2xsmall align-items-center">
+                          Approach
+                          
+                        </a>
+                      </li><li>
+                        <a href="/orange-compact/docs/1.5/foundation/options" class="bd-links-link d-inline-flex column-gap-2xsmall align-items-center">
+                          Options
+                          
+                        </a>
+                      </li><li>
+                        <a href="/orange-compact/docs/1.5/foundation/tokens" class="bd-links-link d-inline-flex column-gap-2xsmall align-items-center">
+                          Tokens
+                          
+                        </a>
+                      </li><li>
+                        <a href="/orange-compact/docs/1.5/foundation/colors" class="bd-links-link d-inline-flex column-gap-2xsmall align-items-center">
+                          Colors
+                          
+                        </a>
+                      </li><li>
+                        <a href="/orange-compact/docs/1.5/foundation/color-modes" class="bd-links-link d-inline-flex column-gap-2xsmall align-items-center">
+                          Color modes
+                          
+                        </a>
+                      </li><li>
+                        <a href="/orange-compact/docs/1.5/foundation/themes" class="bd-links-link d-inline-flex column-gap-2xsmall align-items-center">
+                          Themes
+                          
+                        </a>
+                      </li><li>
+                        <a href="/orange-compact/docs/1.5/foundation/css-variables" class="bd-links-link d-inline-flex column-gap-2xsmall align-items-center">
+                          CSS variables
+                          
+                        </a>
+                      </li><li>
+                        <a href="/orange-compact/docs/1.5/foundation/reboot" class="bd-links-link d-inline-flex column-gap-2xsmall align-items-center">
+                          Reboot
+                          
+                        </a>
+                      </li><li>
+                        <a href="/orange-compact/docs/1.5/foundation/typography" class="bd-links-link d-inline-flex column-gap-2xsmall align-items-center active" aria-current="page">
+                          Typography
+                          
+                        </a>
+                      </li><li>
+                        <a href="/orange-compact/docs/1.5/foundation/images" class="bd-links-link d-inline-flex column-gap-2xsmall align-items-center text-decoration-line-through" title="page is not yet available">
+                          Images
+                          
+                        </a>
+                      </li><li>
+                        <a href="/orange-compact/docs/1.5/foundation/figures" class="bd-links-link d-inline-flex column-gap-2xsmall align-items-center text-decoration-line-through" title="page is not yet available">
+                          Figures
+                          
+                        </a>
+                      </li><li>
+                        <a href="/orange-compact/docs/1.5/foundation/component" class="bd-links-link d-inline-flex column-gap-2xsmall align-items-center">
+                          Component
+                          
+                        </a>
+                      </li><li>
+                        <a href="/orange-compact/docs/1.5/foundation/form-validation" class="bd-links-link d-inline-flex column-gap-2xsmall align-items-center">
+                          Form validation
+                          
+                        </a>
+                      </li>
+              </ul>
+            </li>
+  </ul>
+</nav>
+        </div>
+      </div>
+    </aside>
+
+    <main class="bd-main order-1">
+      <div class="bd-intro pt-small lg:ps-small">
+        <div class="md:d-flex md:flex-row-reverse align-items-center justify-content-between">
+          <div class="d-flex align-items-center gap-medium mb-large md:mb-none text-nowrap">
+            
+            <a class="btn btn-default btn-icon" href="https://github.com/Orange-OpenSource/Orange-Boosted-Bootstrap/blob/v1.5.0-ouds-web/site/src/content/docs/foundation/typography" title="View this file on GitHub" target="_blank" rel="noopener">
+              <span class="visually-hidden">View this file on GitHub</span>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 499.36" role="img">
+  <title>GitHub</title>
+  <path fill="currentColor" fill-rule="evenodd" d="M256 0C114.64 0 0 114.61 0 256c0 113.09 73.34 209 175.08 242.9 12.8 2.35 17.47-5.56 17.47-12.34 0-6.08-.22-22.18-.35-43.54-71.2 15.49-86.2-34.34-86.2-34.34-11.64-29.57-28.42-37.45-28.42-37.45-23.27-15.84 1.73-15.55 1.73-15.55 25.69 1.81 39.21 26.38 39.21 26.38 22.84 39.12 59.92 27.82 74.5 21.27 2.33-16.54 8.94-27.82 16.25-34.22-56.84-6.43-116.6-28.43-116.6-126.49 0-27.95 10-50.8 26.35-68.69-2.63-6.48-11.42-32.5 2.51-67.75 0 0 21.49-6.88 70.4 26.24a242.65 242.65 0 0 1 128.18 0c48.87-33.13 70.33-26.24 70.33-26.24 14 35.25 5.18 61.27 2.55 67.75 16.41 17.9 26.31 40.75 26.31 68.69 0 98.35-59.85 120-116.88 126.32 9.19 7.9 17.38 23.53 17.38 47.41 0 34.22-.31 61.83-.31 70.23 0 6.85 4.61 14.81 17.6 12.31C438.72 464.97 512 369.08 512 256.02 512 114.62 397.37 0 256 0z">
+  </path>
+</svg>
+            </a>
+            <a class="btn btn-icon btn-default add-user-agent" href="https://github.com/Orange-OpenSource/Orange-Boosted-Bootstrap/issues/new?template=doc_report.yml&amp;title=Update%20the%20foundation%2Ftypogr%20page%20on%20orange-compact&amp;version=1.5&amp;labels=%F0%9F%92%AA%20contribution&amp;what-happened=I%20report%20a%20bug%20concerning%20foundation%2Ftypogr%20%3A" title="Report a bug on the typogr page" target="_blank" rel="noopener">
+              <svg aria-hidden="true">
+                <use xlink:href="/orange-compact/docs/1.5/assets/img/ouds-web-sprite.svg#bug"></use>
+              </svg>
+              <span class="visually-hidden">Report a bug on the typogr page</span>
+            </a>
+            <a class="btn btn-icon btn-default" href="https://github.com/Orange-OpenSource/Orange-Boosted-Bootstrap/discussions/new?category=q-a&amp;title=Question%20about%20typogr%20on%20orange-compact&amp;body=I%20have%20a%20question%20about%20..." title="Ask a question about typogr topic" target="_blank" rel="noopener">
+              <svg aria-hidden="true">
+                <use xlink:href="/orange-compact/docs/1.5/assets/img/ouds-web-sprite.svg#message-talk"></use>
+              </svg>
+              <span class="visually-hidden">Ask a question about typogr topic</span>
+            </a>
+          </div>
+          <h1 class="bd-title mb-none" id="bd-content">Typography</h1>
+        </div>
+        <div class="bd-subtitle mt-small">
+          <p>Documentation and examples for OUDS Web typography, including global settings, headings, body text, lists, and more.</p>
+
+        </div>
+      </div>
+
+      <div class="bd-toc mt-large mb-4xlarge lg:my-none lg:mb-4xlarge sm:px-2xsmall text-muted">
+        <h2 class="mb-none" id="docs-toc">
+              <!-- TODO Hack until we have the expand button -->
+              <button class="btn btn-default btn-next md:p-none mb-small md:mb-none text-decoration-none md:d-none" type="button" data-bs-toggle="collapse" data-bs-target="#tocContents" aria-expanded="false" aria-controls="tocContents">
+                On this page
+              </button>
+              <span class="d-none md:d-block h6 my-small ms-large">On this page</span>
+            </h2>
+            <hr class="d-none md:d-block my-small ms-large">
+            <div class="collapse bd-toc-collapse md:ms-xsmall" id="tocContents">
+              <nav id="TableOfContents" aria-labelledby="docs-toc">
+                <ul>
+  <li>
+          <a href="#global-settings">Global settings</a>
+          
+        </li><li>
+          <a href="#headings">Headings</a>
+          
+        </li><li>
+          <a href="#display-headings">Display headings</a>
+          
+        </li><li>
+          <a href="#regular-texts">Regular texts</a>
+          <ul>
+  <li>
+          <a href="#lead">Lead</a>
+          
+        </li><li>
+          <a href="#small">Small</a>
+          
+        </li>
+</ul>
+        </li><li>
+          <a href="#inline-text-elements">Inline text elements</a>
+          
+        </li><li>
+          <a href="#text-utilities">Text utilities</a>
+          
+        </li><li>
+          <a href="#abbreviations">Abbreviations</a>
+          
+        </li><li>
+          <a href="#blockquotes">Blockquotes</a>
+          <ul>
+  <li>
+          <a href="#naming-a-source">Naming a source</a>
+          
+        </li><li>
+          <a href="#alignment">Alignment</a>
+          
+        </li>
+</ul>
+        </li><li>
+          <a href="#lists">Lists</a>
+          <ul>
+  <li>
+          <a href="#description-list-alignment">Description list alignment</a>
+          
+        </li>
+</ul>
+        </li>
+</ul>
+              </nav>
+            </div>
+      </div>
+
+      <div class="bd-content lg:ps-small">
+        <p class="d-inline"><a class="link" href="/orange-compact/docs/1.5/getting-started/component-versioning" id="componentVersions">Component design version:</a></p>
+          <div class="d-inline align-middle" role="group" aria-labelledby="componentVersions">
+            <ul class="list-unstyled d-inline-flex flex-wrap column-gap-xsmall row-gap-medium mb-none align-middle">
+              <li class="tag tag-info tag-muted">Typography v1.0.0</li>
+            </ul>
+          </div>
+        
+
+        
+  <h2 id="global-settings">Global settings<a class="anchor-link" aria-label="Link to this section: Global settings" href="#global-settings"> </a></h2>
+<p>OUDS Web sets basic global display, typography, and link styles. When more control is needed, check out the <a href="/orange-compact/docs/1.5/utilities/text">textual utility classes</a>.</p>
+<ul>
+<li>Use a <a href="/orange-compact/docs/1.5/foundation/reboot#font-stack">font stack</a> of a custom font with native fonts fallback that selects the best <code>font-family</code> for each OS and device.</li>
+<li>For a more inclusive and accessible type scale, we use the browser’s default root <code>font-size</code> (typically 16px) so visitors can customize their browser defaults as needed.</li>
+<li>Use the <code>$font-family-base</code>, <code>$font-size-base</code>, and <code>$line-height-base</code> attributes as our typographic base applied to the <code>:root</code> children.</li>
+<li>Use <code>max-width</code> on all font references for readability reasons. If you want to get rid of the <code>max-width</code>, please make sure to use our <code>.mw-none</code> <a href="/orange-compact/docs/1.5/utilities/sizing">width utility</a>.</li>
+<li>Use <code>--bs-color-bg-primary</code> to set a <code>background-color</code> on the <code>:root</code> children (<code>#fff</code> by default).</li>
+</ul>
+<p>These styles can be found within <code>_reboot.scss</code>, and the global variables are defined in <code>_variables.scss</code>. Make sure to set <code>$font-size-base</code> in <code>rem</code>.</p>
+<div class="alert alert-message alert-info my-medium">
+  <div class="alert-icon"></div>
+  <div class="alert-container">
+    <div class="alert-text-container">
+      <p class="alert-label">Note</p>
+      <p>If you need need to include a font reference inside a custom component, please refer to our <a href="#sass-mixins">font mixin section</a>.</p>
+    </div>
+    
+  </div>
+</div>
+<h2 id="headings">Headings<a class="anchor-link" aria-label="Link to this section: Headings" href="#headings"> </a></h2>
+<p>All HTML headings, <code>&lt;h1&gt;</code> through <code>&lt;h6&gt;</code>, are available. Each class sets <code>font-size</code> but also <code>line-height</code>, <code>letter-spacing</code>, <code>font-weight: bold</code>, and <code>max-width</code>. Here are the associated <code>font-size</code>s depending on the breakpoints. If you want to get rid of the <code>max-width</code>, please make sure to use our <code>.mw-none</code> <a href="/orange-compact/docs/1.5/utilities/sizing">width utility</a>.</p>
+<div class="table-responsive"><table class="table"><thead><tr><th>Heading reference</th><th>Values from <code>2xs</code> to <code>sm</code></th><th>Values from <code>md</code> to <code>lg</code></th><th>Values for <code>xl</code> and upper</th></tr></thead><tbody><tr><td>Heading xlarge (<code>&lt;h1&gt;&lt;/h1&gt;</code>)</td><td><code>1.5rem</code> (24px)</td><td><code>1.5rem</code> (24px)</td><td><code>1.75rem</code> (28px)</td></tr><tr><td>Heading large (<code>&lt;h2&gt;&lt;/h2&gt;</code>)</td><td><code>1.25rem</code> (20px)</td><td><code>1.25rem</code> (20px)</td><td><code>1.5rem</code> (24px)</td></tr><tr><td>Heading medium (<code>&lt;h3&gt;&lt;/h3&gt;</code>)</td><td><code>1.125rem</code> (18px)</td><td><code>1.125rem</code> (18px)</td><td><code>1.25rem</code> (20px)</td></tr><tr><td>Heading small (<code>&lt;h4&gt;&lt;/h4&gt;</code>)</td><td><code>1rem</code> (16px)</td><td><code>1rem</code> (16px)</td><td><code>1.125rem</code> (18px)</td></tr><tr><td>Body large (<code>&lt;h5&gt;&lt;/h5&gt;</code>)</td><td><code>0.875rem</code> (14px)</td><td><code>0.875rem</code> (14px)</td><td><code>1rem</code> (16px)</td></tr><tr><td>Body medium (<code>&lt;h6&gt;&lt;/h6&gt;</code>)</td><td><code>0.8125rem</code> (13px)</td><td><code>0.8125rem</code> (13px)</td><td><code>0.875rem</code> (14px)</td></tr></tbody></table></div>
+<details class="mb-medium"><summary>See more details about the heading classes</summary><div class="table-responsive"><table class="table"><thead><tr><th>Heading reference</th><th>Values from <code>2xs</code> to <code>sm</code></th><th>Values from <code>md</code> to <code>lg</code></th><th>Values for <code>xl</code> and upper</th></tr></thead><tbody><tr><td>Heading xlarge (<code>&lt;h1&gt;&lt;/h1&gt;</code>)</td><td><ul class="mb-none ps-medium"><li><code class="text-default">font-size</code>: <b>1.5rem</b></li><li><code>line-height</code>: 1.3333</li><li><code>letter-spacing</code>: -0.0075rem</li><li><code>max-width</code>: 45rem</li></ul></td><td><ul class="mb-none ps-medium"><li><code class="text-default">font-size</code>: <b>1.5rem</b></li><li><code>line-height</code>: 1.3333</li><li><code>letter-spacing</code>: -0.0075rem</li><li><code>max-width</code>: 45rem</li></ul></td><td><ul class="mb-none ps-medium"><li><code class="text-default">font-size</code>: <b>1.75rem</b></li><li><code>line-height</code>: 1.2857</li><li><code>letter-spacing</code>: -0.0175rem</li><li><code>max-width</code>: 55rem</li></ul></td></tr><tr><td>Heading large (<code>&lt;h2&gt;&lt;/h2&gt;</code>)</td><td><ul class="mb-none ps-medium"><li><code class="text-default">font-size</code>: <b>1.25rem</b></li><li><code>line-height</code>: 1.4</li><li><code>letter-spacing</code>: 0rem</li><li><code>max-width</code>: 45rem</li></ul></td><td><ul class="mb-none ps-medium"><li><code class="text-default">font-size</code>: <b>1.25rem</b></li><li><code>line-height</code>: 1.4</li><li><code>letter-spacing</code>: 0rem</li><li><code>max-width</code>: 45rem</li></ul></td><td><ul class="mb-none ps-medium"><li><code class="text-default">font-size</code>: <b>1.5rem</b></li><li><code>line-height</code>: 1.3333</li><li><code>letter-spacing</code>: -0.0075rem</li><li><code>max-width</code>: 55rem</li></ul></td></tr><tr><td>Heading medium (<code>&lt;h3&gt;&lt;/h3&gt;</code>)</td><td><ul class="mb-none ps-medium"><li><code class="text-default">font-size</code>: <b>1.125rem</b></li><li><code>line-height</code>: 1.3333</li><li><code>letter-spacing</code>: 0.01125rem</li><li><code>max-width</code>: 40rem</li></ul></td><td><ul class="mb-none ps-medium"><li><code class="text-default">font-size</code>: <b>1.125rem</b></li><li><code>line-height</code>: 1.3333</li><li><code>letter-spacing</code>: 0.01125rem</li><li><code>max-width</code>: 40rem</li></ul></td><td><ul class="mb-none ps-medium"><li><code class="text-default">font-size</code>: <b>1.25rem</b></li><li><code>line-height</code>: 1.4</li><li><code>letter-spacing</code>: 0rem</li><li><code>max-width</code>: 45rem</li></ul></td></tr><tr><td>Heading small (<code>&lt;h4&gt;&lt;/h4&gt;</code>)</td><td><ul class="mb-none ps-medium"><li><code class="text-default">font-size</code>: <b>1rem</b></li><li><code>line-height</code>: 1.5</li><li><code>letter-spacing</code>: 0.0125rem</li><li><code>max-width</code>: 40rem</li></ul></td><td><ul class="mb-none ps-medium"><li><code class="text-default">font-size</code>: <b>1rem</b></li><li><code>line-height</code>: 1.5</li><li><code>letter-spacing</code>: 0.0125rem</li><li><code>max-width</code>: 40rem</li></ul></td><td><ul class="mb-none ps-medium"><li><code class="text-default">font-size</code>: <b>1.125rem</b></li><li><code>line-height</code>: 1.3333</li><li><code>letter-spacing</code>: 0.01125rem</li><li><code>max-width</code>: 45rem</li></ul></td></tr><tr><td>Body large (<code>&lt;h5&gt;&lt;/h5&gt;</code>)</td><td><ul class="mb-none ps-medium"><li><code class="text-default">font-size</code>: <b>0.875rem</b></li><li><code>line-height</code>: 1.4286</li><li><code>letter-spacing</code>: 0.010625rem</li><li><code>max-width</code>: 40rem</li></ul></td><td><ul class="mb-none ps-medium"><li><code class="text-default">font-size</code>: <b>0.875rem</b></li><li><code>line-height</code>: 1.4286</li><li><code>letter-spacing</code>: 0.010625rem</li><li><code>max-width</code>: 40rem</li></ul></td><td><ul class="mb-none ps-medium"><li><code class="text-default">font-size</code>: <b>1rem</b></li><li><code>line-height</code>: 1.5</li><li><code>letter-spacing</code>: 0.0125rem</li><li><code>max-width</code>: 45rem</li></ul></td></tr><tr><td>Body medium (<code>&lt;h6&gt;&lt;/h6&gt;</code>)</td><td><ul class="mb-none ps-medium"><li><code class="text-default">font-size</code>: <b>0.8125rem</b></li><li><code>line-height</code>: 1.2308</li><li><code>letter-spacing</code>: 0.011875rem</li><li><code>max-width</code>: 40rem</li></ul></td><td><ul class="mb-none ps-medium"><li><code class="text-default">font-size</code>: <b>0.8125rem</b></li><li><code>line-height</code>: 1.2308</li><li><code>letter-spacing</code>: 0.011875rem</li><li><code>max-width</code>: 40rem</li></ul></td><td><ul class="mb-none ps-medium"><li><code class="text-default">font-size</code>: <b>0.875rem</b></li><li><code>line-height</code>: 1.1429</li><li><code>letter-spacing</code>: 0.010625rem</li><li><code>max-width</code>: 40rem</li></ul></td></tr></tbody></table></div></details>
+<div class="bd-example-snippet bd-code-snippet">
+  <div class="bd-example order-first m-none border-none">
+        <h1>h1. OUDS Web heading</h1>
+<h2>h2. OUDS Web heading</h2>
+<h3>h3. OUDS Web heading</h3>
+<h4>h4. OUDS Web heading</h4>
+<h5>h5. OUDS Web heading</h5>
+<h6>h6. OUDS Web heading</h6>
+      </div>
+
+  
+        <script type="module" src="/orange-compact/docs/1.5/assets/Code.astro_astro_type_script_index_0_lang.BZ61__Mz.js"></script>
+
+<div class="highlight-container">
+  
+  <div class="highlight">
+    <pre class="language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h1</span><span class="token punctuation">></span></span>h1. OUDS Web heading<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h1</span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h2</span><span class="token punctuation">></span></span>h2. OUDS Web heading<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h2</span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h3</span><span class="token punctuation">></span></span>h3. OUDS Web heading<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h3</span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h4</span><span class="token punctuation">></span></span>h4. OUDS Web heading<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h4</span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h5</span><span class="token punctuation">></span></span>h5. OUDS Web heading<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h5</span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h6</span><span class="token punctuation">></span></span>h6. OUDS Web heading<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h6</span><span class="token punctuation">></span></span></code></pre>
+  </div>
+  
+</div>
+        <div class="d-flex order-first align-items-center highlight-toolbar ps-large border-top border-bottom border-thin border-default">
+            <small class="font-monospace text-muted text-uppercase my-small">html</small>
+            <!-- OUDS mod: buttons are not displayed on small screens -->
+            <div class="d-none md:d-flex ms-auto">
+              <button type="button" class="btn btn-minimal btn-icon btn-edit m-2xsmall me-xsmall" title="Edit code on StackBlitz">
+                <svg aria-hidden="true">
+                  <use xlink:href="/orange-compact/docs/1.5/assets/img/ouds-web-sprite.svg#lightning-charge-fill"></use>
+                </svg>
+              </button>
+              <button type="button" class="btn btn-minimal btn-icon btn-clipboard m-2xsmall" title="Copy code to clipboard">
+                <svg aria-hidden="true">
+                  <use xlink:href="/orange-compact/docs/1.5/assets/img/ouds-web-sprite.svg#copy"></use>
+                </svg>
+              </button>
+            </div>
+          </div>
+      
+</div>
+<p><code>.h1</code> through <code>.h6</code> classes are also available, for when you want to match the font styling of a heading but cannot use the associated HTML element.</p>
+<div class="bd-example-snippet bd-code-snippet">
+  <div class="bd-example order-first m-none border-none">
+        <p class="h1">h1. OUDS Web heading</p>
+<p class="h2">h2. OUDS Web heading</p>
+<p class="h3">h3. OUDS Web heading</p>
+<p class="h4">h4. OUDS Web heading</p>
+<p class="h5">h5. OUDS Web heading</p>
+<p class="h6">h6. OUDS Web heading</p>
+      </div>
+
+  
+        
+
+<div class="highlight-container">
+  
+  <div class="highlight">
+    <pre class="language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>h1<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>h1. OUDS Web heading<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>h2<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>h2. OUDS Web heading<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>h3<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>h3. OUDS Web heading<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>h4<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>h4. OUDS Web heading<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>h5<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>h5. OUDS Web heading<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>h6<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>h6. OUDS Web heading<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">></span></span></code></pre>
+  </div>
+  
+</div>
+        <div class="d-flex order-first align-items-center highlight-toolbar ps-large border-top border-bottom border-thin border-default">
+            <small class="font-monospace text-muted text-uppercase my-small">html</small>
+            <!-- OUDS mod: buttons are not displayed on small screens -->
+            <div class="d-none md:d-flex ms-auto">
+              <button type="button" class="btn btn-minimal btn-icon btn-edit m-2xsmall me-xsmall" title="Edit code on StackBlitz">
+                <svg aria-hidden="true">
+                  <use xlink:href="/orange-compact/docs/1.5/assets/img/ouds-web-sprite.svg#lightning-charge-fill"></use>
+                </svg>
+              </button>
+              <button type="button" class="btn btn-minimal btn-icon btn-clipboard m-2xsmall" title="Copy code to clipboard">
+                <svg aria-hidden="true">
+                  <use xlink:href="/orange-compact/docs/1.5/assets/img/ouds-web-sprite.svg#copy"></use>
+                </svg>
+              </button>
+            </div>
+          </div>
+      
+</div>
+<p>You can easily add an icon with your font reference using <a href="/orange-compact/docs/1.5/components/icon#icons-size">our icon size utilities</a>.</p>
+<h2 id="display-headings">Display headings<a class="anchor-link" aria-label="Link to this section: Display headings" href="#display-headings"> </a></h2>
+<p>Traditional heading elements are designed to work best in the meat of your page content. When you need a heading to stand out, consider using a <strong>display heading</strong>—a larger, slightly more opinionated heading style.</p>
+<p>We provide <code>.display-*</code> from <code>large</code> through <code>small</code>. Each class sets <code>font-size</code> but also <code>line-height</code>, <code>letter-spacing</code>, <code>font-weight: bold</code>, and <code>max-width</code>. If you want to get rid of the <code>max-width</code>, please make sure to use our <code>.mw-none</code> <a href="/orange-compact/docs/1.5/utilities/sizing">width utility</a>. Here are the associated <code>font-size</code>s depending on the breakpoints.</p>
+<div class="table-responsive"><table class="table"><thead><tr><th>Display reference</th><th>Values from <code>2xs</code> to <code>sm</code></th><th>Values from <code>md</code> to <code>lg</code></th><th>Values for <code>xl</code> and upper</th></tr></thead><tbody><tr><td>Display large (<code>.display-large</code>)</td><td><code>2.25rem</code> (36px)</td><td><code>2.25rem</code> (36px)</td><td><code>2.5rem</code> (40px)</td></tr><tr><td>Display medium (<code>.display-medium</code>)</td><td><code>2rem</code> (32px)</td><td><code>2rem</code> (32px)</td><td><code>2.25rem</code> (36px)</td></tr><tr><td>Display small (<code>.display-small</code>)</td><td><code>1.75rem</code> (28px)</td><td><code>1.75rem</code> (28px)</td><td><code>2rem</code> (32px)</td></tr></tbody></table></div>
+<details class="mb-medium"><summary>See more details about the display classes</summary><div class="table-responsive"><table class="table"><thead><tr><th>Display reference</th><th>Values from <code>2xs</code> to <code>sm</code></th><th>Values from <code>md</code> to <code>lg</code></th><th>Values for <code>xl</code> and upper</th></tr></thead><tbody><tr><td>Display large (<code>.display-large</code>)</td><td><ul class="mb-none ps-medium"><li><code class="text-default">font-size</code>: <b>2.25rem</b></li><li><code>line-height</code>: 1.2222</li><li><code>letter-spacing</code>: -0.0225rem</li><li><code>max-width</code>: 55rem</li></ul></td><td><ul class="mb-none ps-medium"><li><code class="text-default">font-size</code>: <b>2.25rem</b></li><li><code>line-height</code>: 1.2222</li><li><code>letter-spacing</code>: -0.0225rem</li><li><code>max-width</code>: 55rem</li></ul></td><td><ul class="mb-none ps-medium"><li><code class="text-default">font-size</code>: <b>2.5rem</b></li><li><code>line-height</code>: 1.2</li><li><code>letter-spacing</code>: -0.025rem</li><li><code>max-width</code>: 65rem</li></ul></td></tr><tr><td>Display medium (<code>.display-medium</code>)</td><td><ul class="mb-none ps-medium"><li><code class="text-default">font-size</code>: <b>2rem</b></li><li><code>line-height</code>: 1.25</li><li><code>letter-spacing</code>: -0.02rem</li><li><code>max-width</code>: 55rem</li></ul></td><td><ul class="mb-none ps-medium"><li><code class="text-default">font-size</code>: <b>2rem</b></li><li><code>line-height</code>: 1.25</li><li><code>letter-spacing</code>: -0.02rem</li><li><code>max-width</code>: 55rem</li></ul></td><td><ul class="mb-none ps-medium"><li><code class="text-default">font-size</code>: <b>2.25rem</b></li><li><code>line-height</code>: 1.2222</li><li><code>letter-spacing</code>: -0.0225rem</li><li><code>max-width</code>: 65rem</li></ul></td></tr><tr><td>Display small (<code>.display-small</code>)</td><td><ul class="mb-none ps-medium"><li><code class="text-default">font-size</code>: <b>1.75rem</b></li><li><code>line-height</code>: 1.2857</li><li><code>letter-spacing</code>: -0.0175rem</li><li><code>max-width</code>: 45rem</li></ul></td><td><ul class="mb-none ps-medium"><li><code class="text-default">font-size</code>: <b>1.75rem</b></li><li><code>line-height</code>: 1.2857</li><li><code>letter-spacing</code>: -0.0175rem</li><li><code>max-width</code>: 55rem</li></ul></td><td><ul class="mb-none ps-medium"><li><code class="text-default">font-size</code>: <b>2rem</b></li><li><code>line-height</code>: 1.25</li><li><code>letter-spacing</code>: -0.02rem</li><li><code>max-width</code>: 65rem</li></ul></td></tr></tbody></table></div></details>
+<div class="bd-example-snippet bd-code-snippet">
+  <div class="bd-example order-first m-none border-none">
+        <h1 class="display-large">Display large</h1>
+<h1 class="display-medium">Display medium</h1>
+<h1 class="display-small">Display small</h1>
+      </div>
+
+  
+        
+
+<div class="highlight-container">
+  
+  <div class="highlight">
+    <pre class="language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h1</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>display-large<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>Display large<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h1</span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h1</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>display-medium<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>Display medium<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h1</span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h1</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>display-small<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>Display small<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h1</span><span class="token punctuation">></span></span></code></pre>
+  </div>
+  
+</div>
+        <div class="d-flex order-first align-items-center highlight-toolbar ps-large border-top border-bottom border-thin border-default">
+            <small class="font-monospace text-muted text-uppercase my-small">html</small>
+            <!-- OUDS mod: buttons are not displayed on small screens -->
+            <div class="d-none md:d-flex ms-auto">
+              <button type="button" class="btn btn-minimal btn-icon btn-edit m-2xsmall me-xsmall" title="Edit code on StackBlitz">
+                <svg aria-hidden="true">
+                  <use xlink:href="/orange-compact/docs/1.5/assets/img/ouds-web-sprite.svg#lightning-charge-fill"></use>
+                </svg>
+              </button>
+              <button type="button" class="btn btn-minimal btn-icon btn-clipboard m-2xsmall" title="Copy code to clipboard">
+                <svg aria-hidden="true">
+                  <use xlink:href="/orange-compact/docs/1.5/assets/img/ouds-web-sprite.svg#copy"></use>
+                </svg>
+              </button>
+            </div>
+          </div>
+      
+</div>
+<p>Display headings are configured via the <code>$display-font-sizes</code> Sass map and the variable <code>$display-font-weight</code>.</p>
+<p>Display headings are customizable via three variables, <code>$display-font-family</code>, <code>$display-font-style</code> and <code>$display-line-height</code>.</p>
+<details class="mt-medium mb-2xlarge" data-sb-css-bootstrap="true">
+  <summary class="py-small">
+    Bootstrap
+    <span class="tag tag-small tag-muted sm:float-end">
+      <code>$enable-bootstrap-compatibility: true</code>
+    </span>
+  </summary>
+
+  <div class="alert alert-message alert-info mb-medium">
+  <div class="alert-icon"></div>
+  <div class="alert-container">
+    <div class="alert-text-container">
+      <p class="alert-label">Note</p>
+      
+    <p>This part is enabled only when <code>$enable-bootstrap-compatibility</code> is set to <code>true</code>.</p>
+  
+    </div>
+    <a href="/orange-compact/docs/1.5/foundation/approach/#bootstrap-compatibility" class="link">
+          Read more about Bootstrap compatibility
+        </a>
+  </div>
+</div>
+
+  <p>Traditional heading elements are designed to work best in the meat of your page content. When you need a heading to stand out, consider using a <strong>display heading</strong>—a larger, slightly more opinionated heading style.</p><div class="bd-example-snippet bd-code-snippet">
+  <div class="bd-example order-first m-none border-none">
+        
+<h1 class="display-1">Display 1</h1>
+<h1 class="display-2">Display 2</h1>
+<h1 class="display-3">Display 3</h1>
+<h1 class="display-4">Display 4</h1>
+<h1 class="display-5">Display 5</h1>
+<h1 class="display-6">Display 6</h1>
+      </div>
+
+  
+</div><p>Display headings are configured via the <code>$display-font-sizes</code> Sass map and two variables, <code>$display-font-weight</code> and <code>$display-line-height</code>.</p><p>Display headings are customizable via two variables, <code>$display-font-family</code> and <code>$display-font-style</code>.</p>
+</details>
+
+
+<div class="bd-code-snippet bd-example-snippet bd-file-ref highlight-container">
+  <div class="d-flex align-items-center highlight-toolbar ps-large border-bottom border-thin border-default">
+    <a class="me-4xlarge font-monospace small" href="https://github.com/Orange-OpenSource/Orange-Boosted-Bootstrap/blob/v1.5.0-ouds-web/scss/_variables.scss">
+      scss/_variables.scss
+    </a>
+  </div>
+  <div class="highlight md:pe-4xlarge">
+    <pre class="language-scss"><code class="language-scss"><span class="token property"><span class="token variable">$display-font-sizes</span></span><span class="token punctuation">:</span> <span class="token punctuation">(</span>
+  <span class="token property">large</span><span class="token punctuation">:</span> <span class="token string">"display-large"</span><span class="token punctuation">,</span>
+  <span class="token property">medium</span><span class="token punctuation">:</span> <span class="token string">"display-medium"</span><span class="token punctuation">,</span>
+  <span class="token property">small</span><span class="token punctuation">:</span> <span class="token string">"display-small"</span>
+<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token keyword">@if</span> <span class="token selector"><span class="token variable">$enable-bootstrap-compatibility</span> </span><span class="token punctuation">{</span>
+  <span class="token property"><span class="token variable">$display-font-sizes</span></span><span class="token punctuation">:</span> <span class="token function">map-merge</span><span class="token punctuation">(</span>
+    <span class="token variable">$display-font-sizes</span><span class="token punctuation">,</span>
+    <span class="token punctuation">(</span>
+      <span class="token property">1</span><span class="token punctuation">:</span> <span class="token string">"display-large"</span><span class="token punctuation">,</span>
+      <span class="token property">2</span><span class="token punctuation">:</span> <span class="token string">"display-medium"</span><span class="token punctuation">,</span>
+      <span class="token property">3</span><span class="token punctuation">:</span> <span class="token string">"display-small"</span><span class="token punctuation">,</span>
+      <span class="token property">4</span><span class="token punctuation">:</span> <span class="token string">"heading-xlarge"</span><span class="token punctuation">,</span>
+      <span class="token property">5</span><span class="token punctuation">:</span> <span class="token string">"heading-large"</span><span class="token punctuation">,</span>
+      <span class="token property">6</span><span class="token punctuation">:</span> <span class="token string">"heading-medium"</span><span class="token punctuation">,</span>
+    <span class="token punctuation">)</span>
+  <span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token property"><span class="token variable">$display-font-family</span></span><span class="token punctuation">:</span> <span class="token null keyword">null</span><span class="token punctuation">;</span>
+<span class="token property"><span class="token variable">$display-font-style</span></span><span class="token punctuation">:</span>  <span class="token null keyword">null</span><span class="token punctuation">;</span>
+<span class="token property"><span class="token variable">$display-font-weight</span></span><span class="token punctuation">:</span> <span class="token variable">$ouds-font-weight-web-display</span><span class="token punctuation">;</span>
+<span class="token property"><span class="token variable">$display-line-height</span></span><span class="token punctuation">:</span> <span class="token variable">$headings-line-height</span><span class="token punctuation">;</span>
+</code></pre>
+  </div>
+  <div class="position-absolute top-0 end-0">
+    <button type="button" class="btn btn-minimal btn-icon btn-clipboard m-2xsmall" title="Copy display-headings SCSS to clipboard">
+      <svg aria-hidden="true">
+        <use xlink:href="/orange-compact/docs/1.5/assets/img/ouds-web-sprite.svg#copy"></use>
+      </svg>
+    </button>
+  </div>
+</div>
+<h2 id="regular-texts">Regular texts<a class="anchor-link" aria-label="Link to this section: Regular texts" href="#regular-texts"> </a></h2>
+<p>Since only <a href="#headings">headings</a>, <a href="#display-headings">display headings</a> and <code>strong</code> text are meant to use <strong>Bold</strong> in main content, other contents should use <code>normal</code> font-weight. Each class sets <code>font-size</code> but also <code>line-height</code>, <code>letter-spacing</code>, and <code>max-width</code>. If you want to get rid of the <code>max-width</code>, please make sure to use our <code>.mw-none</code> <a href="/orange-compact/docs/1.5/utilities/sizing">width utility</a>. Here are the associated <code>font-size</code>s depending on the breakpoints. See our <a href="/orange-compact/docs/1.5/utilities/text#font-size">Font utilities</a>.</p>
+<div class="alert alert-message alert-info my-medium">
+  <div class="alert-icon"></div>
+  <div class="alert-container">
+    <div class="alert-text-container">
+      <p class="alert-label">Note</p>
+      <p>Body medium is set by default on <code>:root</code> children but we don’t set the <code>max-width</code> property for usability reasons.</p>
+    </div>
+    
+  </div>
+</div>
+<div class="table-responsive"><table class="table"><thead><tr><th>Regular text reference</th><th>Values from <code>2xs</code> to <code>sm</code></th><th>Values from <code>md</code> to <code>lg</code></th><th>Values for <code>xl</code> and upper</th></tr></thead><tbody><tr><td>Body large (<code>.lead</code>)</td><td><code>0.875rem</code> (14px)</td><td><code>0.875rem</code> (14px)</td><td><code>1rem</code> (16px)</td></tr><tr><td>Body medium (default <code>&lt;p&gt;</code>)</td><td><code>0.8125rem</code> (13px)</td><td><code>0.8125rem</code> (13px)</td><td><code>0.875rem</code> (14px)</td></tr><tr><td>Body small (<code>.small</code> or <code>&lt;small&gt;</code>)</td><td><code>0.75rem</code> (12px)</td><td><code>0.75rem</code> (12px)</td><td><code>0.8125rem</code> (13px)</td></tr><tr><td>Label xlarge (<code>.fs-lxl</code>)</td><td><code>1rem</code> (16px)</td><td><code>1rem</code> (16px)</td><td><code>1rem</code> (16px)</td></tr><tr><td>Label large (<code>.fs-ll</code>)</td><td><code>0.875rem</code> (14px)</td><td><code>0.875rem</code> (14px)</td><td><code>0.875rem</code> (14px)</td></tr><tr><td>Label medium (<code>.fs-lm</code>)</td><td><code>0.8125rem</code> (13px)</td><td><code>0.8125rem</code> (13px)</td><td><code>0.8125rem</code> (13px)</td></tr><tr><td>Label small (<code>.fs-ls</code>)</td><td><code>0.75rem</code> (12px)</td><td><code>0.75rem</code> (12px)</td><td><code>0.75rem</code> (12px)</td></tr></tbody></table></div>
+<details class="mb-medium"><summary>See more details about the regular text classes</summary><div class="table-responsive"><table class="table"><thead><tr><th>Regular text reference</th><th>Values from <code>2xs</code> to <code>sm</code></th><th>Values from <code>md</code> to <code>lg</code></th><th>Values for <code>xl</code> and upper</th></tr></thead><tbody><tr><td>Body large (<code>.lead</code>)</td><td><ul class="mb-none ps-medium"><li><code class="text-default">font-size</code>: <b>0.875rem</b></li><li><code>line-height</code>: 1.4286</li><li><code>letter-spacing</code>: 0.010625rem</li><li><code>max-width</code>: 40rem</li></ul></td><td><ul class="mb-none ps-medium"><li><code class="text-default">font-size</code>: <b>0.875rem</b></li><li><code>line-height</code>: 1.4286</li><li><code>letter-spacing</code>: 0.010625rem</li><li><code>max-width</code>: 40rem</li></ul></td><td><ul class="mb-none ps-medium"><li><code class="text-default">font-size</code>: <b>1rem</b></li><li><code>line-height</code>: 1.5</li><li><code>letter-spacing</code>: 0.0125rem</li><li><code>max-width</code>: 45rem</li></ul></td></tr><tr><td>Body medium (default <code>&lt;p&gt;</code>)</td><td><ul class="mb-none ps-medium"><li><code class="text-default">font-size</code>: <b>0.8125rem</b></li><li><code>line-height</code>: 1.2308</li><li><code>letter-spacing</code>: 0.011875rem</li><li><code>max-width</code>: 40rem</li></ul></td><td><ul class="mb-none ps-medium"><li><code class="text-default">font-size</code>: <b>0.8125rem</b></li><li><code>line-height</code>: 1.2308</li><li><code>letter-spacing</code>: 0.011875rem</li><li><code>max-width</code>: 40rem</li></ul></td><td><ul class="mb-none ps-medium"><li><code class="text-default">font-size</code>: <b>0.875rem</b></li><li><code>line-height</code>: 1.1429</li><li><code>letter-spacing</code>: 0.010625rem</li><li><code>max-width</code>: 40rem</li></ul></td></tr><tr><td>Body small (<code>.small</code> or <code>&lt;small&gt;</code>)</td><td><ul class="mb-none ps-medium"><li><code class="text-default">font-size</code>: <b>0.75rem</b></li><li><code>line-height</code>: 1.3333</li><li><code>letter-spacing</code>: 0.01125rem</li><li><code>max-width</code>: 40rem</li></ul></td><td><ul class="mb-none ps-medium"><li><code class="text-default">font-size</code>: <b>0.75rem</b></li><li><code>line-height</code>: 1.3333</li><li><code>letter-spacing</code>: 0.01125rem</li><li><code>max-width</code>: 40rem</li></ul></td><td><ul class="mb-none ps-medium"><li><code class="text-default">font-size</code>: <b>0.8125rem</b></li><li><code>line-height</code>: 1.2308</li><li><code>letter-spacing</code>: 0.011875rem</li><li><code>max-width</code>: 40rem</li></ul></td></tr><tr><td>Label xlarge (<code>.fs-lxl</code>)</td><td><ul class="mb-none ps-medium"><li><code class="text-default">font-size</code>: <b>1rem</b></li><li><code>line-height</code>: 1.5</li><li><code>letter-spacing</code>: 0.0125rem</li><li><code>max-width</code>: 40rem</li></ul></td><td><ul class="mb-none ps-medium"><li><code class="text-default">font-size</code>: <b>1rem</b></li><li><code>line-height</code>: 1.5</li><li><code>letter-spacing</code>: 0.0125rem</li><li><code>max-width</code>: 40rem</li></ul></td><td><ul class="mb-none ps-medium"><li><code class="text-default">font-size</code>: <b>1rem</b></li><li><code>line-height</code>: 1.5</li><li><code>letter-spacing</code>: 0.0125rem</li><li><code>max-width</code>: 45rem</li></ul></td></tr><tr><td>Label large (<code>.fs-ll</code>)</td><td><ul class="mb-none ps-medium"><li><code class="text-default">font-size</code>: <b>0.875rem</b></li><li><code>line-height</code>: 1.4286</li><li><code>letter-spacing</code>: 0.010625rem</li><li><code>max-width</code>: 40rem</li></ul></td><td><ul class="mb-none ps-medium"><li><code class="text-default">font-size</code>: <b>0.875rem</b></li><li><code>line-height</code>: 1.4286</li><li><code>letter-spacing</code>: 0.010625rem</li><li><code>max-width</code>: 40rem</li></ul></td><td><ul class="mb-none ps-medium"><li><code class="text-default">font-size</code>: <b>0.875rem</b></li><li><code>line-height</code>: 1.4286</li><li><code>letter-spacing</code>: 0.010625rem</li><li><code>max-width</code>: 45rem</li></ul></td></tr><tr><td>Label medium (<code>.fs-lm</code>)</td><td><ul class="mb-none ps-medium"><li><code class="text-default">font-size</code>: <b>0.8125rem</b></li><li><code>line-height</code>: 1.2308</li><li><code>letter-spacing</code>: 0.011875rem</li><li><code>max-width</code>: 40rem</li></ul></td><td><ul class="mb-none ps-medium"><li><code class="text-default">font-size</code>: <b>0.8125rem</b></li><li><code>line-height</code>: 1.2308</li><li><code>letter-spacing</code>: 0.011875rem</li><li><code>max-width</code>: 40rem</li></ul></td><td><ul class="mb-none ps-medium"><li><code class="text-default">font-size</code>: <b>0.8125rem</b></li><li><code>line-height</code>: 1.2308</li><li><code>letter-spacing</code>: 0.011875rem</li><li><code>max-width</code>: 40rem</li></ul></td></tr><tr><td>Label small (<code>.fs-ls</code>)</td><td><ul class="mb-none ps-medium"><li><code class="text-default">font-size</code>: <b>0.75rem</b></li><li><code>line-height</code>: 1.3333</li><li><code>letter-spacing</code>: 0.01125rem</li><li><code>max-width</code>: 40rem</li></ul></td><td><ul class="mb-none ps-medium"><li><code class="text-default">font-size</code>: <b>0.75rem</b></li><li><code>line-height</code>: 1.3333</li><li><code>letter-spacing</code>: 0.01125rem</li><li><code>max-width</code>: 40rem</li></ul></td><td><ul class="mb-none ps-medium"><li><code class="text-default">font-size</code>: <b>0.75rem</b></li><li><code>line-height</code>: 1.3333</li><li><code>letter-spacing</code>: 0.01125rem</li><li><code>max-width</code>: 40rem</li></ul></td></tr></tbody></table></div></details>
+<p>You can easily add an icon with your font reference using <a href="/orange-compact/docs/1.5/components/icon#icons-size">our icon size utilities</a>.</p>
+<h3 id="lead">Lead<a class="anchor-link" aria-label="Link to this section: Lead" href="#lead"> </a></h3>
+<p>Make a paragraph stand out by adding <code>.lead</code>. It uses <a href="#regular-texts">Regular text</a> body large.</p>
+<div class="bd-example-snippet bd-code-snippet">
+  <div class="bd-example order-first m-none border-none">
+        <p class="lead">
+  This is a lead paragraph. It stands out from regular paragraphs.
+</p>
+      </div>
+
+  
+        
+
+<div class="highlight-container">
+  
+  <div class="highlight">
+    <pre class="language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>lead<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+  This is a lead paragraph. It stands out from regular paragraphs.
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">></span></span></code></pre>
+  </div>
+  
+</div>
+        <div class="d-flex order-first align-items-center highlight-toolbar ps-large border-top border-bottom border-thin border-default">
+            <small class="font-monospace text-muted text-uppercase my-small">html</small>
+            <!-- OUDS mod: buttons are not displayed on small screens -->
+            <div class="d-none md:d-flex ms-auto">
+              <button type="button" class="btn btn-minimal btn-icon btn-edit m-2xsmall me-xsmall" title="Edit code on StackBlitz">
+                <svg aria-hidden="true">
+                  <use xlink:href="/orange-compact/docs/1.5/assets/img/ouds-web-sprite.svg#lightning-charge-fill"></use>
+                </svg>
+              </button>
+              <button type="button" class="btn btn-minimal btn-icon btn-clipboard m-2xsmall" title="Copy code to clipboard">
+                <svg aria-hidden="true">
+                  <use xlink:href="/orange-compact/docs/1.5/assets/img/ouds-web-sprite.svg#copy"></use>
+                </svg>
+              </button>
+            </div>
+          </div>
+      
+</div>
+<h3 id="small">Small<a class="anchor-link" aria-label="Link to this section: Small" href="#small"> </a></h3>
+<p>Render a paragraph with a small <code>font-size</code> by adding <code>.small</code> or use <code>&lt;small&gt;</code>. It uses <a href="#regular-texts">Regular text</a> body small.</p>
+<div class="bd-example-snippet bd-code-snippet">
+  <div class="bd-example order-first m-none border-none">
+        <p>
+  <small>This is a small paragraph.</small>
+</p>
+<p class="small">
+  This is a small paragraph.
+</p>
+      </div>
+
+  
+        
+
+<div class="highlight-container">
+  
+  <div class="highlight">
+    <pre class="language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>small</span><span class="token punctuation">></span></span>This is a small paragraph.<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>small</span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>small<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+  This is a small paragraph.
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">></span></span></code></pre>
+  </div>
+  
+</div>
+        <div class="d-flex order-first align-items-center highlight-toolbar ps-large border-top border-bottom border-thin border-default">
+            <small class="font-monospace text-muted text-uppercase my-small">html</small>
+            <!-- OUDS mod: buttons are not displayed on small screens -->
+            <div class="d-none md:d-flex ms-auto">
+              <button type="button" class="btn btn-minimal btn-icon btn-edit m-2xsmall me-xsmall" title="Edit code on StackBlitz">
+                <svg aria-hidden="true">
+                  <use xlink:href="/orange-compact/docs/1.5/assets/img/ouds-web-sprite.svg#lightning-charge-fill"></use>
+                </svg>
+              </button>
+              <button type="button" class="btn btn-minimal btn-icon btn-clipboard m-2xsmall" title="Copy code to clipboard">
+                <svg aria-hidden="true">
+                  <use xlink:href="/orange-compact/docs/1.5/assets/img/ouds-web-sprite.svg#copy"></use>
+                </svg>
+              </button>
+            </div>
+          </div>
+      
+</div>
+<h2 id="inline-text-elements">Inline text elements<a class="anchor-link" aria-label="Link to this section: Inline text elements" href="#inline-text-elements"> </a></h2>
+<p>Styling for common inline HTML5 elements.</p>
+<div class="bd-example-snippet bd-code-snippet">
+  <div class="bd-example order-first m-none border-none">
+        <p>You can use the mark tag to <mark>highlight</mark> text.</p>
+<p><del>This line of text is meant to be treated as deleted text.</del></p>
+<p><s>This line of text is meant to be treated as no longer accurate.</s></p>
+<p><ins>This line of text is meant to be treated as an addition to the document.</ins></p>
+<p><u>This line of text will render as underlined.</u></p>
+<p><small>This line of text is meant to be treated as fine print.</small></p>
+<p><strong>This line rendered as bold text.</strong></p>
+<p><em>This line rendered as bold text too,</em> but would natively be italicized.</p>
+      </div>
+
+  
+        
+
+<div class="highlight-container">
+  
+  <div class="highlight">
+    <pre class="language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">></span></span>You can use the mark tag to <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>mark</span><span class="token punctuation">></span></span>highlight<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>mark</span><span class="token punctuation">></span></span> text.<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>del</span><span class="token punctuation">></span></span>This line of text is meant to be treated as deleted text.<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>del</span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>s</span><span class="token punctuation">></span></span>This line of text is meant to be treated as no longer accurate.<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>s</span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>ins</span><span class="token punctuation">></span></span>This line of text is meant to be treated as an addition to the document.<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>ins</span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>u</span><span class="token punctuation">></span></span>This line of text will render as underlined.<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>u</span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>small</span><span class="token punctuation">></span></span>This line of text is meant to be treated as fine print.<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>small</span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>strong</span><span class="token punctuation">></span></span>This line rendered as bold text.<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>strong</span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>em</span><span class="token punctuation">></span></span>This line rendered as bold text too,<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>em</span><span class="token punctuation">></span></span> but would natively be italicized.<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">></span></span></code></pre>
+  </div>
+  
+</div>
+        <div class="d-flex order-first align-items-center highlight-toolbar ps-large border-top border-bottom border-thin border-default">
+            <small class="font-monospace text-muted text-uppercase my-small">html</small>
+            <!-- OUDS mod: buttons are not displayed on small screens -->
+            <div class="d-none md:d-flex ms-auto">
+              <button type="button" class="btn btn-minimal btn-icon btn-edit m-2xsmall me-xsmall" title="Edit code on StackBlitz">
+                <svg aria-hidden="true">
+                  <use xlink:href="/orange-compact/docs/1.5/assets/img/ouds-web-sprite.svg#lightning-charge-fill"></use>
+                </svg>
+              </button>
+              <button type="button" class="btn btn-minimal btn-icon btn-clipboard m-2xsmall" title="Copy code to clipboard">
+                <svg aria-hidden="true">
+                  <use xlink:href="/orange-compact/docs/1.5/assets/img/ouds-web-sprite.svg#copy"></use>
+                </svg>
+              </button>
+            </div>
+          </div>
+      
+</div>
+<p>Beware that those tags should be used for semantic purpose:</p>
+<ul>
+<li><code>&lt;mark&gt;</code> represents text which is marked or highlighted for reference or notation purposes.</li>
+<li><code>&lt;small&gt;</code> represents side-comments and small print, like copyright and legal text. It uses <a href="#regular-texts">Regular text</a> body small.</li>
+<li><code>&lt;s&gt;</code> represents element that are no longer relevant or no longer accurate.</li>
+<li><code>&lt;u&gt;</code> represents a span of inline text which should be rendered in a way that indicates that it has a non-textual annotation.</li>
+</ul>
+<p>If you want to style your text, you should use the following classes instead:</p>
+<ul>
+<li><code>.mark</code> will apply the same styles as <code>&lt;mark&gt;</code>.</li>
+<li><code>.small</code> will apply the same styles as <code>&lt;small&gt;</code>.</li>
+<li><code>.text-decoration-underline</code> will apply the same styles as <code>&lt;u&gt;</code>.</li>
+<li><code>.text-decoration-line-through</code> will apply the same styles as <code>&lt;s&gt;</code>.</li>
+</ul>
+<p>While not shown above, feel free to use <code>&lt;b&gt;</code> and <code>&lt;i&gt;</code> in HTML5. <code>&lt;b&gt;</code> is meant to highlight words or phrases without conveying additional importance, while <code>&lt;i&gt;</code> is mostly for voice, technical terms, etc.</p>
+<h2 id="text-utilities">Text utilities<a class="anchor-link" aria-label="Link to this section: Text utilities" href="#text-utilities"> </a></h2>
+<p>Change text alignment, transform, style, weight, line-height, decoration and color with our <a href="/orange-compact/docs/1.5/utilities/text">text utilities</a> and <a href="/orange-compact/docs/1.5/utilities/color">color utilities</a>.</p>
+<h2 id="abbreviations">Abbreviations<a class="anchor-link" aria-label="Link to this section: Abbreviations" href="#abbreviations"> </a></h2>
+<p>Stylized implementation of HTML’s <code>&lt;abbr&gt;</code> element for abbreviations and acronyms to show the expanded version on hover. Abbreviations have a default underline and gain a help cursor to provide additional context on hover and to users of assistive technologies.</p>
+<div class="bd-example-snippet bd-code-snippet">
+  <div class="bd-example order-first m-none border-none">
+        <p><abbr title="attribute">attr</abbr></p>
+      </div>
+
+  
+        
+
+<div class="highlight-container">
+  
+  <div class="highlight">
+    <pre class="language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>abbr</span> <span class="token attr-name">title</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>attribute<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>attr<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>abbr</span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">></span></span></code></pre>
+  </div>
+  
+</div>
+        <div class="d-flex order-first align-items-center highlight-toolbar ps-large border-top border-bottom border-thin border-default">
+            <small class="font-monospace text-muted text-uppercase my-small">html</small>
+            <!-- OUDS mod: buttons are not displayed on small screens -->
+            <div class="d-none md:d-flex ms-auto">
+              <button type="button" class="btn btn-minimal btn-icon btn-edit m-2xsmall me-xsmall" title="Edit code on StackBlitz">
+                <svg aria-hidden="true">
+                  <use xlink:href="/orange-compact/docs/1.5/assets/img/ouds-web-sprite.svg#lightning-charge-fill"></use>
+                </svg>
+              </button>
+              <button type="button" class="btn btn-minimal btn-icon btn-clipboard m-2xsmall" title="Copy code to clipboard">
+                <svg aria-hidden="true">
+                  <use xlink:href="/orange-compact/docs/1.5/assets/img/ouds-web-sprite.svg#copy"></use>
+                </svg>
+              </button>
+            </div>
+          </div>
+      
+</div>
+<h2 id="blockquotes">Blockquotes<a class="anchor-link" aria-label="Link to this section: Blockquotes" href="#blockquotes"> </a></h2>
+<p>For quoting blocks of content from another source within your document. Wrap <code>&lt;blockquote class=&quot;blockquote&quot;&gt;</code> around any HTML as the quote. It uses <a href="#regular-texts">Regular text</a> body large.</p>
+<div class="bd-example-snippet bd-code-snippet">
+  <div class="bd-example order-first m-none border-none">
+        <blockquote class="blockquote">
+  <p>A well-known quote, contained in a blockquote element.</p>
+</blockquote>
+      </div>
+
+  
+        
+
+<div class="highlight-container">
+  
+  <div class="highlight">
+    <pre class="language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>blockquote</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>blockquote<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">></span></span>A well-known quote, contained in a blockquote element.<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>blockquote</span><span class="token punctuation">></span></span></code></pre>
+  </div>
+  
+</div>
+        <div class="d-flex order-first align-items-center highlight-toolbar ps-large border-top border-bottom border-thin border-default">
+            <small class="font-monospace text-muted text-uppercase my-small">html</small>
+            <!-- OUDS mod: buttons are not displayed on small screens -->
+            <div class="d-none md:d-flex ms-auto">
+              <button type="button" class="btn btn-minimal btn-icon btn-edit m-2xsmall me-xsmall" title="Edit code on StackBlitz">
+                <svg aria-hidden="true">
+                  <use xlink:href="/orange-compact/docs/1.5/assets/img/ouds-web-sprite.svg#lightning-charge-fill"></use>
+                </svg>
+              </button>
+              <button type="button" class="btn btn-minimal btn-icon btn-clipboard m-2xsmall" title="Copy code to clipboard">
+                <svg aria-hidden="true">
+                  <use xlink:href="/orange-compact/docs/1.5/assets/img/ouds-web-sprite.svg#copy"></use>
+                </svg>
+              </button>
+            </div>
+          </div>
+      
+</div>
+<h3 id="naming-a-source">Naming a source<a class="anchor-link" aria-label="Link to this section: Naming a source" href="#naming-a-source"> </a></h3>
+<p>The HTML spec requires that blockquote attribution be placed outside the <code>&lt;blockquote&gt;</code>. When providing attribution, wrap your <code>&lt;blockquote&gt;</code> in a <code>&lt;figure&gt;</code> and use a <code>&lt;figcaption&gt;</code> or a block level element (e.g., <code>&lt;p&gt;</code>) with the <code>.blockquote-footer</code> class. Be sure to wrap the name of the source work in <code>&lt;cite&gt;</code> as well. It uses <a href="#regular-texts">Regular text</a> body small.</p>
+<div class="bd-example-snippet bd-code-snippet">
+  <div class="bd-example order-first m-none border-none">
+        <figure>
+  <blockquote class="blockquote">
+    <p>A well-known quote, contained in a blockquote element.</p>
+  </blockquote>
+  <figcaption class="blockquote-footer">
+    Someone famous in <cite title="Source Title">Source Title</cite>
+  </figcaption>
+</figure>
+      </div>
+
+  
+        
+
+<div class="highlight-container">
+  
+  <div class="highlight">
+    <pre class="language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>figure</span><span class="token punctuation">></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>blockquote</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>blockquote<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">></span></span>A well-known quote, contained in a blockquote element.<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>blockquote</span><span class="token punctuation">></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>figcaption</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>blockquote-footer<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+    Someone famous in <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>cite</span> <span class="token attr-name">title</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>Source Title<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>Source Title<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>cite</span><span class="token punctuation">></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>figcaption</span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>figure</span><span class="token punctuation">></span></span></code></pre>
+  </div>
+  
+</div>
+        <div class="d-flex order-first align-items-center highlight-toolbar ps-large border-top border-bottom border-thin border-default">
+            <small class="font-monospace text-muted text-uppercase my-small">html</small>
+            <!-- OUDS mod: buttons are not displayed on small screens -->
+            <div class="d-none md:d-flex ms-auto">
+              <button type="button" class="btn btn-minimal btn-icon btn-edit m-2xsmall me-xsmall" title="Edit code on StackBlitz">
+                <svg aria-hidden="true">
+                  <use xlink:href="/orange-compact/docs/1.5/assets/img/ouds-web-sprite.svg#lightning-charge-fill"></use>
+                </svg>
+              </button>
+              <button type="button" class="btn btn-minimal btn-icon btn-clipboard m-2xsmall" title="Copy code to clipboard">
+                <svg aria-hidden="true">
+                  <use xlink:href="/orange-compact/docs/1.5/assets/img/ouds-web-sprite.svg#copy"></use>
+                </svg>
+              </button>
+            </div>
+          </div>
+      
+</div>
+<h3 id="alignment">Alignment<a class="anchor-link" aria-label="Link to this section: Alignment" href="#alignment"> </a></h3>
+<p>Use text utilities as needed to change the alignment of your blockquote.</p>
+<div class="bd-example-snippet bd-code-snippet">
+  <div class="bd-example order-first m-none border-none">
+        <figure class="text-center">
+  <blockquote class="blockquote">
+    <p class="mx-auto">A well-known quote, contained in a blockquote element.</p>
+  </blockquote>
+  <figcaption class="blockquote-footer mx-auto">
+    Someone famous in <cite title="Source Title">Source Title</cite>
+  </figcaption>
+</figure>
+      </div>
+
+  
+        
+
+<div class="highlight-container">
+  
+  <div class="highlight">
+    <pre class="language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>figure</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>text-center<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>blockquote</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>blockquote<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>mx-auto<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>A well-known quote, contained in a blockquote element.<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>blockquote</span><span class="token punctuation">></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>figcaption</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>blockquote-footer mx-auto<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+    Someone famous in <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>cite</span> <span class="token attr-name">title</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>Source Title<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>Source Title<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>cite</span><span class="token punctuation">></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>figcaption</span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>figure</span><span class="token punctuation">></span></span></code></pre>
+  </div>
+  
+</div>
+        <div class="d-flex order-first align-items-center highlight-toolbar ps-large border-top border-bottom border-thin border-default">
+            <small class="font-monospace text-muted text-uppercase my-small">html</small>
+            <!-- OUDS mod: buttons are not displayed on small screens -->
+            <div class="d-none md:d-flex ms-auto">
+              <button type="button" class="btn btn-minimal btn-icon btn-edit m-2xsmall me-xsmall" title="Edit code on StackBlitz">
+                <svg aria-hidden="true">
+                  <use xlink:href="/orange-compact/docs/1.5/assets/img/ouds-web-sprite.svg#lightning-charge-fill"></use>
+                </svg>
+              </button>
+              <button type="button" class="btn btn-minimal btn-icon btn-clipboard m-2xsmall" title="Copy code to clipboard">
+                <svg aria-hidden="true">
+                  <use xlink:href="/orange-compact/docs/1.5/assets/img/ouds-web-sprite.svg#copy"></use>
+                </svg>
+              </button>
+            </div>
+          </div>
+      
+</div>
+<div class="bd-example-snippet bd-code-snippet">
+  <div class="bd-example order-first m-none border-none">
+        <figure class="text-end">
+  <blockquote class="blockquote">
+    <p class="ms-auto">A well-known quote, contained in a blockquote element.</p>
+  </blockquote>
+  <figcaption class="blockquote-footer ms-auto">
+    Someone famous in <cite title="Source Title">Source Title</cite>
+  </figcaption>
+</figure>
+      </div>
+
+  
+        
+
+<div class="highlight-container">
+  
+  <div class="highlight">
+    <pre class="language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>figure</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>text-end<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>blockquote</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>blockquote<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>ms-auto<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>A well-known quote, contained in a blockquote element.<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>blockquote</span><span class="token punctuation">></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>figcaption</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>blockquote-footer ms-auto<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+    Someone famous in <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>cite</span> <span class="token attr-name">title</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>Source Title<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>Source Title<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>cite</span><span class="token punctuation">></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>figcaption</span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>figure</span><span class="token punctuation">></span></span></code></pre>
+  </div>
+  
+</div>
+        <div class="d-flex order-first align-items-center highlight-toolbar ps-large border-top border-bottom border-thin border-default">
+            <small class="font-monospace text-muted text-uppercase my-small">html</small>
+            <!-- OUDS mod: buttons are not displayed on small screens -->
+            <div class="d-none md:d-flex ms-auto">
+              <button type="button" class="btn btn-minimal btn-icon btn-edit m-2xsmall me-xsmall" title="Edit code on StackBlitz">
+                <svg aria-hidden="true">
+                  <use xlink:href="/orange-compact/docs/1.5/assets/img/ouds-web-sprite.svg#lightning-charge-fill"></use>
+                </svg>
+              </button>
+              <button type="button" class="btn btn-minimal btn-icon btn-clipboard m-2xsmall" title="Copy code to clipboard">
+                <svg aria-hidden="true">
+                  <use xlink:href="/orange-compact/docs/1.5/assets/img/ouds-web-sprite.svg#copy"></use>
+                </svg>
+              </button>
+            </div>
+          </div>
+      
+</div>
+<h2 id="lists">Lists<a class="anchor-link" aria-label="Link to this section: Lists" href="#lists"> </a></h2>
+<div class="alert alert-message alert-info my-medium">
+  <div class="alert-icon"></div>
+  <div class="alert-container">
+    <div class="alert-text-container">
+      <p class="alert-label">Note</p>
+      <p>Please refer to the <a href="/orange-compact/docs/1.5/components/bullet-list#utilities">Bullet list component</a> for <code>.list-unstyled</code> and <code>.list-inline</code> documentation.</p>
+    </div>
+    
+  </div>
+</div>
+<h3 id="description-list-alignment">Description list alignment<a class="anchor-link" aria-label="Link to this section: Description list alignment" href="#description-list-alignment"> </a></h3>
+<p>Align terms and descriptions horizontally by using our grid system’s predefined classes (or semantic mixins). For longer terms, you can optionally add a <code>.text-truncate</code> class to truncate the text with an ellipsis.</p>
+<div class="bd-example-snippet bd-code-snippet">
+  <div class="bd-example order-first m-none border-none">
+        <dl class="row">
+  <dt class="sm:col-3">Description lists</dt>
+  <dd class="sm:col-9">A description list is perfect for defining terms.</dd>
+
+  <dt class="sm:col-3">Term</dt>
+  <dd class="sm:col-9">
+    <p>Definition for the term.</p>
+    <p>And some more placeholder definition text.</p>
+  </dd>
+
+  <dt class="sm:col-3">Another term</dt>
+  <dd class="sm:col-9">This definition is short, so no extra paragraphs or anything.</dd>
+
+  <dt class="sm:col-3 text-truncate">Truncated term is truncated</dt>
+  <dd class="sm:col-9">This can be useful when space is tight. Adds an ellipsis at the end.</dd>
+
+  <dt class="sm:col-3">Nesting</dt>
+  <dd class="sm:col-9">
+    <dl class="row">
+      <dt class="sm:col-4">Nested definition list</dt>
+      <dd class="sm:col-8">I heard you like definition lists. Let me put a definition list inside your definition list.</dd>
+    </dl>
+  </dd>
+</dl>
+      </div>
+
+  
+        
+
+<div class="highlight-container">
+  
+  <div class="highlight">
+    <pre class="language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>dl</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>row<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>dt</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>sm:col-3<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>Description lists<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>dt</span><span class="token punctuation">></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>dd</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>sm:col-9<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>A description list is perfect for defining terms.<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>dd</span><span class="token punctuation">></span></span>
+
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>dt</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>sm:col-3<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>Term<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>dt</span><span class="token punctuation">></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>dd</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>sm:col-9<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">></span></span>Definition for the term.<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">></span></span>And some more placeholder definition text.<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>dd</span><span class="token punctuation">></span></span>
+
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>dt</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>sm:col-3<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>Another term<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>dt</span><span class="token punctuation">></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>dd</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>sm:col-9<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>This definition is short, so no extra paragraphs or anything.<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>dd</span><span class="token punctuation">></span></span>
+
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>dt</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>sm:col-3 text-truncate<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>Truncated term is truncated<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>dt</span><span class="token punctuation">></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>dd</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>sm:col-9<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>This can be useful when space is tight. Adds an ellipsis at the end.<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>dd</span><span class="token punctuation">></span></span>
+
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>dt</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>sm:col-3<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>Nesting<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>dt</span><span class="token punctuation">></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>dd</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>sm:col-9<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>dl</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>row<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>dt</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>sm:col-4<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>Nested definition list<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>dt</span><span class="token punctuation">></span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>dd</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>sm:col-8<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>I heard you like definition lists. Let me put a definition list inside your definition list.<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>dd</span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>dl</span><span class="token punctuation">></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>dd</span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>dl</span><span class="token punctuation">></span></span></code></pre>
+  </div>
+  
+</div>
+        <div class="d-flex order-first align-items-center highlight-toolbar ps-large border-top border-bottom border-thin border-default">
+            <small class="font-monospace text-muted text-uppercase my-small">html</small>
+            <!-- OUDS mod: buttons are not displayed on small screens -->
+            <div class="d-none md:d-flex ms-auto">
+              <button type="button" class="btn btn-minimal btn-icon btn-edit m-2xsmall me-xsmall" title="Edit code on StackBlitz">
+                <svg aria-hidden="true">
+                  <use xlink:href="/orange-compact/docs/1.5/assets/img/ouds-web-sprite.svg#lightning-charge-fill"></use>
+                </svg>
+              </button>
+              <button type="button" class="btn btn-minimal btn-icon btn-clipboard m-2xsmall" title="Copy code to clipboard">
+                <svg aria-hidden="true">
+                  <use xlink:href="/orange-compact/docs/1.5/assets/img/ouds-web-sprite.svg#copy"></use>
+                </svg>
+              </button>
+            </div>
+          </div>
+      
+</div>
+
+      </div>
+    </main>
+  </div>
+
+    <footer class="footer navbar bd-footer" data-bs-theme="dark">
+  <h2 class="visually-hidden">OUDS Web sitemap & information</h2>
+  <div class="container-fluid container-max-width footer-nav">
+    <nav class="accordion" id="sitemapAccordion" aria-label="OUDS Web sitemap footer">
+      <div class="row">
+        <div class="footer-column md:col-6 lg:col-2">
+          <h3 class="accordion-header footer-heading" id="headingGuides">
+            <button class="accordion-button collapsed container-fluid container-max-width px-gridmargin md:d-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapseGuides" aria-expanded="false" aria-controls="collapseGuides">
+              Guides
+            </button>
+            <span class="d-none md:d-flex">Guides</span>
+          </h3>
+          <div id="collapseGuides" class="container-fluid container-max-width accordion-collapse collapse" data-bs-parent="#sitemapAccordion">
+            <ul class="navbar-nav ps-large md:ps-none">
+              <li>
+                <a class="nav-link" href="/orange-compact/docs/1.5/getting-started" aria-describedby="headingGuides">
+                  Getting started
+                </a>
+              </li>
+              <li>
+                <a class="nav-link" href="/orange-compact/docs/1.5/customize" aria-describedby="headingGuides">
+                  Customize
+                </a>
+              </li>
+              <li>
+                <a class="nav-link" href="/orange-compact/docs/1.5/dual-mode" aria-describedby="headingGuides">
+                  Dual Mode
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-column md:col-6 lg:col-2">
+          <h3 class="accordion-header footer-heading" id="headingProjects">
+            <button class="accordion-button collapsed container-fluid container-max-width px-gridmargin md:d-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapseProjects" aria-expanded="false" aria-controls="collapseProjects">
+              Projects
+            </button>
+            <span class="d-none md:d-flex">Projects</span>
+          </h3>
+          <div id="collapseProjects" class="container-fluid container-max-width accordion-collapse collapse" data-bs-parent="#sitemapAccordion">
+            <ul class="navbar-nav ps-large md:ps-none">
+              <li>
+                <a class="nav-link" href="https://github.com/Orange-OpenSource/Orange-Boosted-Bootstrap/tree/main" aria-describedby="headingProjects" target="_blank" rel="noopener">
+                  OUDS Web
+                </a>
+              </li>
+              <li>
+                <a class="nav-link" href="https://getbootstrap.com" aria-describedby="headingProjects" target="_blank" rel="noopener">
+                  Bootstrap
+                </a>
+              </li>
+              <li>
+                <a class="nav-link" href="https://ouds-main--boosted.netlify.app/orange-compact" aria-describedby="headingProjects" target="_blank" rel="noopener">
+                  Pre-release
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-column md:col-6 lg:col-2 md:mt-xlarge lg:mt-none">
+          <h3 class="accordion-header footer-heading" id="headingCommunity">
+            <button class="accordion-button collapsed container-fluid container-max-width px-gridmargin md:d-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapseCommunity" aria-expanded="false" aria-controls="collapseCommunity">
+              Community
+            </button>
+            <span class="d-none md:d-flex">Community</span>
+          </h3>
+          <div id="collapseCommunity" class="container-fluid container-max-width accordion-collapse collapse" data-bs-parent="#sitemapAccordion">
+            <ul class="navbar-nav ps-large md:ps-none">
+              <li>
+                <a class="nav-link" href="https://github.com/Orange-OpenSource/Orange-Boosted-Bootstrap/issues" aria-describedby="headingCommunity" target="_blank" rel="noopener">
+                  Issues
+                </a>
+              </li>
+              <li>
+                <a class="nav-link" href="https://github.com/Orange-OpenSource/Orange-Boosted-Bootstrap/discussions" aria-describedby="headingCommunity" target="_blank" rel="noopener">
+                  Discussions
+                </a>
+              </li>
+              <li>
+                <a class="nav-link" href="https://teams.microsoft.com/l/channel/19%3Aed6a64c0c22d4b2084d304d0e33a1168%40thread.tacv2/PR04%20-%20%F0%9F%96%A5%EF%B8%8F%20Web%20Browsing?groupId=a9581e9e-6775-46f5-9e4a-3ce57096e6be&tenantId=90c7a20a-f34b-40bf-bc48-b9253b6f5d20" aria-describedby="headingCommunity" target="_blank" rel="noopener">
+                  Teams channel
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-column md:col-6 lg:col-2 md:mt-xlarge lg:mt-none">
+          <h3 class="accordion-header footer-heading" id="headingAbout">
+            <button class="accordion-button collapsed container-fluid container-max-width px-gridmargin md:d-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapseAbout" aria-expanded="false" aria-controls="collapseAbout">
+              About
+            </button>
+            <span class="d-none md:d-flex">About</span>
+          </h3>
+          <div id="collapseAbout" class="container-fluid container-max-width accordion-collapse collapse" data-bs-parent="#sitemapAccordion">
+            <ul class="navbar-nav ps-large md:ps-none">
+              <li>
+                <a class="nav-link" href="/resources" aria-describedby="headingAbout">
+                  Resources
+                </a>
+              </li>
+              <li class="d-none">
+                <a class="nav-link" href="/orange-compact/docs/1.5/about/overview" aria-describedby="headingAbout">
+                  Overview
+                </a>
+              </li>
+              <li>
+                <a class="nav-link" href="/orange-compact/docs/1.5/about/team" aria-describedby="headingAbout">
+                  Team
+                </a>
+              </li>
+              <li class="d-none">
+                <a class="nav-link" href="/orange-compact/docs/1.5/about/brand" aria-describedby="headingAbout">
+                  Brand
+                </a>
+              </li>
+              <li>
+                <a class="nav-link" href="/orange-compact/docs/1.5/about/license" aria-describedby="headingAbout">
+                  License
+                </a>
+              </li>
+              <li>
+                <a class="nav-link" href="/orange-compact/docs/1.5/about/cookies" aria-describedby="headingAbout">
+                  Cookies
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- OUDS mod: footer specific adaptations -->
+        <div class="footer-column accordion-header md:col-12 lg:col-4 mb-large fw-normal small pt-medium md:pt-2xlarge lg:pt-none">
+          <p class="px-gridmargin md:px-none">
+            This documentation is an adaptation made by Orange. Original version designed and built with all the love in
+            the world by the <a href="https://github.com/orgs/twbs/people" target="_blank" rel="noopener">Bootstrap core team</a> with the help of <a href="https://github.com/twbs/bootstrap/graphs/contributors" target="_blank" rel="noopener">their contributors</a>.
+          </p>
+          <p class="px-gridmargin md:px-none">
+            Orange modified code licensed <a href="https://github.com/Orange-OpenSource/Orange-Boosted-Bootstrap/blob/main/LICENSE" target="_blank" rel="license noopener">MIT</a>-&nbsp;just like <a href="https://github.com/twbs/bootstrap/blob/main/LICENSE" target="_blank" rel="license noopener" title="Bootstrap’s license" aria-label="Bootstrap’s license">Bootstrap</a>, docs <a href="https://creativecommons.org/licenses/by/3.0/" target="_blank" rel="license noopener">CC BY 3.0</a>.
+          </p>
+          <p class="px-gridmargin md:px-none">Currently v1.5.0.</p>
+          <p class="px-gridmargin md:px-none">
+            <a href="https://www.netlify.com" target="_blank" rel="noopener">
+              <img src="https://www.netlify.com/assets/badges/netlify-badge-dark.svg" alt="Deployed by Netlify" width="89" height="40">
+            </a>
+          </p>
+        </div>
+      </div>
+      <!-- End mod -->
+    </nav>
+  </div>
+</footer>
+<!-- OUDS mod: back-to-top component -->
+<nav aria-label="Back to top" class="back-to-top">
+  <a href="#top" class="back-to-top-link btn btn-icon btn-default" data-bs-label="Back to top">
+    <span class="visually-hidden">Back to top</span>
+  </a>
+</nav>
+<!-- End mod -->
+
+    <script src="/orange-compact/docs/1.5/dist/js/ouds-web.bundle.min.js" integrity="sha384-vxOsFAM8abhNsTIB3U20VNqClqsZLa00eytCnuiPOVWqEs580qc8lVd6wtst2DoS"></script>
+
+<script type="module" src="/orange-compact/docs/1.5/assets/Scripts.astro_astro_type_script_index_0_lang.CQJZt5a4.js"></script>
+<script type="module" src="/orange-compact/docs/1.5/assets/Scripts.astro_astro_type_script_index_1_lang.CX5itVmH.js"></script>
+
+<!-- OUDS mod -->
+<script src="/orange-compact/docs/1.5/assets/js/tarteaucitron.min.js"></script>
+<script type="module">(function(){window.addEventListener(`tac.root_available`,()=>{let e=document.getElementById(`tarteaucitron`);e.querySelectorAll(`.tarteaucitronAllow`).forEach(e=>{e.classList.add(`btn`,`btn-strong`),e.innerHTML=tarteaucitron.lang.allowAll}),e.querySelectorAll(`.tarteaucitronDeny`).forEach(e=>{e.classList.add(`btn`,`btn-negative`,`mt-2xsmall`,`md:mt-none`,`md:ms-large`),e.innerHTML=tarteaucitron.lang.denyAll}),document.getElementById(`tarteaucitron`).classList.add(`p-large`),document.getElementById(`tarteaucitronClosePanel`).classList.add(`d-flex`,`align-content-end`,`position-relative`,`btn-close`),document.getElementById(`tarteaucitronClosePanel`).innerHTML=`<span class="visually-hidden">${document.getElementById(`tarteaucitronClosePanel`).innerHTML}</span>`},{once:!0}),window.addEventListener(`tac.open_alert`,()=>{let e=document.getElementById(`tarteaucitronAlertBig`);e.setAttribute(`data-bs-theme`,`dark`),document.getElementById(`tarteaucitronCloseAlert`).classList.add(`btn`,`btn-default`,`btn-small`,`lg:ms-small`),e.querySelector(`.tarteaucitronAllow`).classList.add(`btn`,`btn-strong`,`btn-small`,`sm:mx-small`,`lg:ms-auto`,`my-small`,`lg:my-none`),e.querySelector(`.tarteaucitronAllow`).innerHTML=tarteaucitron.lang.acceptAll,e.querySelector(`.tarteaucitronDeny`).classList.add(`btn`,`btn-negative`,`btn-small`,`sm:mx-small`,`my-small`,`lg:my-none`),e.querySelector(`.tarteaucitronDeny`).innerHTML=tarteaucitron.lang.denyAll},{once:!0}),window.addEventListener(`tac.open_panel`,()=>{document.getElementById(`tarteaucitronSaveButton`).classList.add(`btn`,`btn-default`,`d-flex`,`mt-large`,`mx-auto`),document.querySelectorAll(`#tarteaucitronServices_api button`).forEach(e=>{e.classList.add(`btn`,`ms-small`)});let e=document.querySelector(`#tarteaucitronAllAllowed`),t=document.querySelector(`#tarteaucitronAllDenied`),n=document.querySelectorAll(`.form-check-input`);e.addEventListener(`click`,()=>{for(let e=0;e<n.length;e++)n.checked||(n[e].checked=!0)}),t.addEventListener(`click`,()=>{for(let e=0;e<n.length;e++)n.checked!==!0&&(n[e].checked=!1)})},{once:!0}),document.addEventListener(`googletagmanager_added`,()=>{let e=document.getElementById(`googletagmanagerLine`);e.className=`${e.className} d-flex`;let t=document.querySelector(`#googletagmanagerLine .tarteaucitronName`);t.className=`${t.className} flex-grow-1`;let n=document.querySelector(`#googletagmanagerLine .tarteaucitronAsk`);n.className=`${n.className} flex-shrink-0`;let r=document.createRange().createContextualFragment(`<label class="switch-standalone">
+            <input class="control-item-indicator" type="checkbox" role="switch" value="" id="googletagmanagerAllowed" aria-labelledby="googletagmanagerLine" onchange="tarteaucitron.userInterface.respond(document.getElementById('googletagmanagerAllowed'),document.getElementById('googletagmanagerAllowed').checked);"${(document.cookie.match(/^(?:.*;)?\s*cookie-consent\s*=\s*([^;]+)(?:.*)?$/)||[null])[1].match(`!googletagmanager=true`)?`checked`:``} />
+            <span class="visually-hidden">Google Tag Manager</span>
+            <input id="googletagmanagerDenied" class="d-none" />
+          </label>`);n.innerHTML=``,n.append(r)},{once:!0})})(),typeof tarteaucitron<`u`&&(tarteaucitron.init({hashtag:`#cookie-consent`,cookieName:`cookie-consent`,orientation:`bottom`,bodyPosition:`top`,cookieslist:!0,highPrivacy:!0,showIcon:!1,handleBrowserDNTRequest:!0,useExternalCss:!0,mandatory:!1,googleConsentMode:!1,partnersList:!0,alwaysNeedConsent:!0}),tarteaucitron.user.googletagmanagerId=`GTM-P6H78BQ`,(tarteaucitron.job=tarteaucitron.job||[]).push(`googletagmanager`),window.dataLayer=[{site_name:`accessibility-boosted`,phase:`prod`,page_type:`doc`,page_title:document.title}]);</script>
+
+<script type="module" src="/orange-compact/docs/1.5/assets/DocsScripts.astro_astro_type_script_index_0_lang.DMWfqqjT.js"></script>
+<script type="module" src="/orange-compact/docs/1.5/assets/DocsScripts.astro_astro_type_script_index_1_lang.KVWdcmew.js"></script>
+<!-- End mod -->
+
+    
+
+    <div class="position-fixed" aria-hidden="true">
+          <input type="text" tabindex="-1">
+        </div>
+  </body>
+</html>
