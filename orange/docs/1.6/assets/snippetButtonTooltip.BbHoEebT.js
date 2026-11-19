@@ -1,0 +1,1 @@
+function e(e,t){document.querySelectorAll(e).forEach(e=>{oudsWeb.Tooltip.getOrCreateInstance(e,{title:t})})}export{e as t};
