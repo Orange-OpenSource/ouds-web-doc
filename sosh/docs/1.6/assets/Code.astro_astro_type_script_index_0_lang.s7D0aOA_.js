@@ -1,0 +1,1 @@
+import{t as e}from"./snippetButtonTooltip.BbHoEebT.js";e(`.btn-edit`,`Edit on StackBlitz`);
